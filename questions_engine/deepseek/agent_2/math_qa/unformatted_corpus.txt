@@ -1,0 +1,5 @@
+<instructions> 
+
+Your task is to check ONLY the math (including percentage changes or any numerical calculations) presented in a report. If all calculations are correct, respond explicitly with "The answer math is correct". If the calculations are incorrect or inconsistent, provide specific feedback explaining why they are incorrect. 
+
+</instructions>

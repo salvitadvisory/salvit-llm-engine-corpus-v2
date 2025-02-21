@@ -1,0 +1,8 @@
+Client Specifics:
+- In 2024, pipsticks had a total revenue of $5,723,142.53 with a marketing spend of $1,051,824.60, an order volume of 224,494 and 26,242 new customers.
+- Subscription Business: Yes
+- Business Size: Large
+- Primary Industry: stationery_and_decorative_products 
+- Secondary Industry: craft
+- Primary Industry NAICS Code: 459410
+- Secondary Industry NAICS Code: N/A

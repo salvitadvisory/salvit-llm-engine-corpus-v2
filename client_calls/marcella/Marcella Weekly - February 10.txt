@@ -1,0 +1,38 @@
+﻿Marcella Weekly - February 10
+
+
+VIEW RECORDING - 63 mins (No highlights)
+Meeting Purpose
+Review Marcella's marketing performance and discuss strategic adjustments to Google Ads campaigns and potential trigger mail testing.
+Key Takeaways
+* Significant changes made to Google Ads campaigns to optimize spend and reduce brand cannibalization
+* Shopping campaigns showing promising early results with good impression share and competitive CPAs
+* Plans to test trigger mail campaigns for both customer retention and prospecting, using a match market test approach
+Topics
+Google Ads Campaign Restructuring
+* Reduced spend on brand-focused Performance Max campaigns to avoid cannibalization
+* Increased budget for non-brand shopping campaigns managed by Robert
+* Early results show 55% impression share overall, with some categories reaching 93%
+* CPAs around $61 after two days, considered positive for initial performance
+* Plan to gradually increase target ROAS and budget based on performance
+Facebook Ad Performance
+* Recent drop in CPA over the weekend, potentially due to improved campaigns and 180,000 mailers hitting simultaneously
+* Spending $4,000/day on DABA (Dynamic Ads for Broad Audiences) and $1,800-$3,000/day on Advantage+ shopping campaigns
+Trigger Mail Testing Proposal
+* Considering two approaches: post-purchase retention and prospecting based on site visits + credit data
+* Jordan recommends a match market test approach to ensure unbiased results
+* Minimum test investment of $20,000, potentially run over 6 weeks to 3 months
+* Will email to discuss further and potentially set up a joint call with the trigger mail company
+COGS Analysis (Briefly Mentioned)
+* Ongoing investigation into discrepancies between expected and actual COGS percentages
+* Jordan to analyze shipping cost data to build a bottom-up P&L for better accuracy
+Next Steps
+* Continue monitoring Google Ads performance, adjusting target ROAS and budgets as needed
+* Jordan to structure a match market test proposal for trigger mail campaigns
+* Andy to send Jordan shipping cost data for bottom-up P&L analysis
+* Schedule follow-up discussion on trigger mail testing via email or call
+Action Items
+* Follow up w/ Remaina re COGS discrepancies. Get detailed breakdown of 10% delta btw 44% & 54% - WATCH (5 secs)
+* Send Jordan DHL invoices for Dec (or Nov if Dec unavailable) + all Darnit invoices for same month + 321 invoices - WATCH (5 secs)
+* Monitor performance of adjusted Google Ads campaigns (esp. new shopping setup). Prep for potential ROAS/budget adjustments in coming days - WATCH (5 secs)
+* Email Jordan re trigger mail test structure. Discuss prospecting vs existing customer approaches, test duration - WATCH (5 secs)

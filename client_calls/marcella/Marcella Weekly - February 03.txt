@@ -1,0 +1,51 @@
+﻿Marcella Weekly - February 03
+
+
+VIEW RECORDING - 59 mins (No highlights)
+Meeting Purpose
+Review marketing performance, discuss financial model, and plan campaign adjustments for Marcella NYC.
+Key Takeaways
+* Company is hitting revenue targets but needs to improve efficiency and profitability
+* Current gross margin estimates range from 50-60%, requiring further investigation with CFO
+* Facebook ad campaigns performing well overall, but some adjustments needed to optimize spend
+* New broad targeting campaign to be launched at $500/day, scaling gradually if successful
+Topics
+Financial Performance and Modeling
+* January revenue hit $4 million target
+* Gross margin estimates vary:
+   * CFO model shows ~50% margin
+   * Jordan's model indicates ~60% margin
+* Discrepancies found in discount and return rate assumptions
+* Action: Schedule deep dive with CFO to reconcile financial models
+Facebook Ad Performance
+* Overall blended CPA: $53 (weekend performance)
+* DAVA campaign:
+   * Performing well at reduced budget ($500 less)
+   * Broad targeting yielding good results
+* Retargeting:
+   * Facebook Advantage + campaign spending ~$4k/day
+   * Mixed performance across ad sets
+* Action: Turn on "First Purchase Carousel" ad, monitor performance before turning off underperforming ads
+New Campaign Strategy
+* Launch new broad targeting campaign:
+   * Start at $500/day budget
+   * Use 6 ads to begin
+   * Scale budget by 20% every 2-3 days if performing well
+* Maintain current campaign structure for now, despite Jordan's preference for individual ad set budgets
+Google Ads
+* Overall performance has declined since recent changes
+* Plan to shift investment towards shopping campaigns
+* Action: Follow up with Robert to implement shopping campaign changes
+Next Steps
+* Andy to turn on "First Purchase Carousel" ad in retargeting campaign
+* Increase DPA campaign budget by 20%
+* Launch new broad targeting campaign at $500/day
+* Jordan to follow up with Robert on Google shopping campaign changes
+* Schedule financial model review with CFO to reconcile discrepancies
+* Continue monitoring ad performance and make gradual adjustments
+Action Items
+* Schedule call with Romana to review and reconcile financial model discrepancies - WATCH (5 secs)
+* Turn on first purchase carousel ad in Facebook Advantage retargeting campaign - WATCH (5 secs)
+* Start new evergreen top-of-funnel campaign - broad audience, $500/day budget, 6 ads - WATCH (5 secs)
+* Increase DPA campaign budget by 20% - WATCH (5 secs)
+* Follow up with Robert re Google account changes, focus on moving investment into shopping - WATCH (5 secs)

@@ -1,0 +1,8 @@
+Client Specifics:
+- In 2024, stately had a total revenue of $27,734,779.78 with a marketing spend of $6,140,640.78, an order volume of 128,194 and 20,825 new customers.
+- Subscription Business: Yes
+- Business Size: Large
+- Primary Industry: mens_clothing
+- Secondary Industry: monthly_box
+- Primary Industry NAICS Code: 454111
+- Secondary Industry NAICS Code: N/A
