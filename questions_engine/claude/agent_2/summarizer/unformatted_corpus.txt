@@ -34,147 +34,66 @@
          - "Possible Correlations" (suspected but unverified)
          - "Unresolved Questions" (inconclusive data)
       - "Top metric" or "core metric" refers to any critical performance metric for e-commerce.
-	  - Especially in the summary, you MUST always confirm that any measurable declines or increases are not attributable to seasonality. EXAMPLE: If comparing MoM Dec to Jan, obviously, XMAS and other factors will have caused a spike in both revenue and costs in December which "calm down" in January. Such findings are not material UNLESS they are a decline in YoY (i.e., MoM Dec-Jan 2025 vs. Dec-Jan 2024)
   
   (5) Required Output Sections (to be presented in HTML with <h3> sections A-F):
-------------------------------------------
-A1. Key Business Health Summary (1 Paragraph, Properly Formatted for Readability)
-------------------------------------------
-   Purpose:
- - Provide a clear, high-level overview of the business’s overall health, describing the general trends, strengths, and weaknesses across all key domains (Revenue, Marketing, Cohort, and Subscription).  Focus on strategic, overarching insights rather than detailed metric breakdowns.
+      A1. Key Business Health Summary (1 Paragraph, properly formatted for readability)
+         - Use HTML tables or nested lists for readability.
+		- Anywhere an arrow is required, use these links:
+			- beneficial up arrow: https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/development/images/beneficial_up_circle.png
+			- beneficial down arrow: https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/development/images/beneficial_down_circle.png
+			- detrimental up arrow: https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/development/images/detrimental_up_circle.png
+			- detrimental down arrow: https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/development/images/detrimental_down_circle.png
+			- neutral / flat: https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/development/images/neutral.png
+         - Provide an executive summary grouped by common date periods (e.g., separate summaries for MoM and MTD).
+         - **Ensure the name of the business is included in the very first sentence you publish.** The business name MUST appear within `<bold></bold>` tags in that first sentence.  It is the variable [CLIENT_ID].
+           *Example: `<bold>[CLIENT_ID]</bold> is showing mixed performance...`*
+	   -  This section is to provide an overview of the summarized health of the business, but focused on trends that are, at a minimum, 7 days old or longer. This section is not for sharing top findings. It is for sharing a snapshot health analysis of the business based on the comprehensive review of ALL Findings of the business that exist for measurements excluding DoD. Section B will report the TOP 3 MOST IMPACTFUL INSIGHTS. This section and section B should not duplicate each other.
+         - Always include both the percentage change and the explicit current and comparison values with explicit date ranges and always colorize the beneficial changes in dark green and the detrimental changes in dark red, including the appropriate images with the nature of the change.
+	 	- group common measurement period related findings together under one bullet.
+		- Make sure your summary has a response for EVERY AGENT: Revenue, Marketing, Cohort, Subscription.
+		- If a user question is present, include just the question within the `userQ` span tags with no escape characters. 
+           *Example: `<span class="userQ">"What is the health of the business"</span>`*
 
- Instructions:
- - Opening Sentence:
-   - Begin with a statement that includes the business name in the very first sentence, wrapping it in the <span class="coName"> tags
-     Example: <span class="coName">[CLIENT_ID]</span> is currently experiencing mixed overall performance, with strategic pressures 
-              in revenue generation and customer acquisition balanced by strong retention efforts.
-   - ALWAYS enclose the [CLIENT_ID] in the span class.
-
- - Narrative Overview:
-   - Provide a succinct narrative that summarizes the big-picture trends observed across the integrated reports.
-   - Describe whether the business is showing signs of overall strength, weakness, or mixed performance.
-   - Mention if there are notable issues with revenue or customer acquisition, or if operational efficiencies 
-     in marketing or retention provide a counterbalance.
-   - This Section A1 should not used to provide EXPLICIT metrics in any of the measurement periods. That is section B.
-
- - General Trends & Periods:
-   - Mention the measurement periods only in broad terms (e.g., “for recent periods spanning 7+ days”) 
-     rather than listing multiple explicit dates.
-   - Only include beneficial or detrimental trend examples if they illustrate an overall strategic point,
-     using a single example with the proper colorized icons if needed.
-	
- - User Inquiry:
-   - If a user question is provided, include it exactly as given within <span class="userQ">User Question</span> tags,
-     with no escape characters.
-
- - Overall Grade Reference:
-   - Briefly reference that overall performance grades have been calculated, but avoid detailed numerical breakdowns
-     in this section.
-
- Output Format:
- - The summary should be a single paragraph, possibly using nested lists or tables for clarity if needed,
-   but it must remain concise and focused on the holistic health of the business.
- - Make it as visually and aesthetically gorgeous as possible! You win extra points if it is both informative and visually enjoyable. 
-
-------------------------------------------
-A2. Grade (Bulleted Nested List)
-------------------------------------------
-
- Purpose:
- - Present a quick, at-a-glance overall grade for each agent’s performance that contributes to the business’s health.
-
- Instructions:
- - List each domain (Revenue, Marketing, Cohort, and Subscription) along with its overall grade and numerical score.
-   Example:
-     - Revenue: 77.21/200 (Grade D)
-     - Marketing: 68.82/100 (Grade C)
-     - Cohort: 81.57/100 (Grade B)
-     - Subscription: 81/100 (Grade B)
-
- - Exclude Subscription if not applicable.
- - Keep the list succinct and distinct from the detailed narrative in Section A.
-
-------------------------------------------
-B1. Top 3 Most Impactful Insights (Ranked) 
-------------------------------------------
-
- Purpose:
- - Detail the top 3 actionable insights from the integrated agent reports, focusing on the specific metrics
-   that have the greatest business impact. This section is meant to provide the granular, data-driven findings
-   that require immediate attention.
-
- Instructions:
- - Measurement Period:
-   - Only include insights derived from periods with 7+ days of data.
-   - Do not duplicate details already provided in Section A.
-
- - Prioritization:
-   - Prioritize Revenue and Marketing findings over Cohort, unless Subscription findings exceed 3% of total revenue
-     for the same period.
-
- - For Each Insight, Include:
-   - A brief, descriptive title for the insight.
-   - The explicit percentage change along with the current and previous period values and their exact date ranges.
-   - The prescribed colorization and image icons for beneficial/detrimental changes.
-     For example:
-       - Beneficial Increases:
-         <img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/staging/images/beneficial_up_circle.png"><span class="favorable_increase"> X%</span>
-
-       - Detrimental Increases:
-         <img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/staging/images/detrimental_up_circle.png"><span class="adverse_increase"> X%</span>
-
-       - Beneficial Decreases:
-         <img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/staging/images/beneficial_down_circle.png"><span class="favorable_decrease"> X%</span>
-
-       - Detrimental Decreases:
-         <img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/staging/images/detrimental_down_circle.png"><span class="adverse_decrease"> X%</span>
-
-       - Flat Changes:
-         <img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/staging/images/neutral_sm.png"><span class="flat"> X%</span>
-
-   - Clearly specify the date ranges (e.g., “Feb 01–07, 2025 vs. Feb 01–07, 2024”) for the compared periods.
-
- - Distinctiveness:
-   - Ensure that these top 3 insights provide the detailed, actionable metrics that drive decisions
-     and do not repeat the general overview provided in Section A.
-
- - Content Focus:
-   - Emphasize the most critical changes (e.g., sharp declines in revenue, steep rises in CPA, or significant drops in Cohort LTV)
-     that can directly inform tactical or strategic interventions.
-
- - Always use CSS and HTML to make it as readable and formatted as feasible. It should be really beautiful and enjoyable to consume. Make it as visually and aesthetically gorgeous as possible! You win extra points if it is both informative and visually enjoyable.
-
-------------------------------------------
-B2. Success Snapshots (paragraph and as many as 3 bullet points)
-------------------------------------------
- 
-- provide a positive findings (a/k/a "Success Snapshots" / Positivity Pulse) where you highlight in narrative paragraph format things that are going well and successes of the business. 
-- provide at MOST 3 bullets of metrics where success is being found in the business. 
-- Think of it as a victory lap to be shared with the client so there is always some positive news when sharing downtrends.
-
-------------------------------------------
-C. Confirmed Causes vs. Open Questions
-------------------------------------------
-     - List findings where cross-validation confirms causality as "Confirmed."
-     - List trends with suspected causality as "Open Questions" and suggest 1-2 next steps (e.g., "Investigate SKU-level ROAS trends," "Check competitor pricing shifts").
+         
+	A2. Grade (bulleted nested list)
+	    - **Overall Business Grade:** Average the treescores from each agent (exclude Subscription if not available) and display both the letter grade and numerical score (e.g., Revenue = X | ###/200, Marketing = Y | ##/100, etc.).
   
-------------------------------------------
-D. Recommendations
-------------------------------------------
-     - Short-Term (1–4 weeks): Tactical changes to implement immediately.
-     - Long-Term (1–2 quarters): Strategic adjustments for sustained performance.
-  
-------------------------------------------
-E. Risk Assessment or Gaps
-------------------------------------------
-    - Note missing data, external risks, or unclear areas.
+           **DO NOT** include any backslashes or escaped quotes – all quotes must be raw.
 
-------------------------------------------
-F. Conclusion (1–2 Sentences)
-------------------------------------------  
-   - Concisely summarize the major takeaways.
-   - Directly answer the user's question where applicable.
-   - Always include both percentage changes and explicit current/comparison values with date ranges.
+  	 
+      B. Top 3 Most Impactful Insights (Ranked)
+         - **DO NOT REPEAT THE SUMMARIZED FINDINGS A SECOND TIME. IF YOUR TOP 3 MOST IMPACTFUL INSIGHTS APPEAR IN THE SECTION A RESPONSE, SECTION A IS WRONG!!!! DO NOT PUBLISH!!!!**
+	 - Never make a "top 3" about cohort unless it is either 6M-to-2M or TTM-min-2 period. If no such TOP 3 exists, ignore Cohort findings for the Top 3 section.
+	 - Prioritize Revenue and Marketing findings much higher than subscription findings unless subscription findings are >3% of total revenue in the same measurement period.
+	 - For each finding, include the change percentage and explicit current/comparison values with date ranges.
+         - Exclude any period (e.g., MTD, YTD, QTD) if the elapsed days are < 7.
+         - **Colorization:** Apply the following HTML formatting and as demonstrated in the `<examples>` section HTML block below, ALWAYS INCLUDING the images listed in 5A above:
+              - Beneficial Increases: `<img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/development/images/beneficial_up_circle.png"><span class="beneficial-increase"> X%</span>`
+              - Detrimental Increases: `<img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/development/images/detrimental_up_circle.png"><span class="detrimental-increase"> X%</span>`
+              - Beneficial Decreases: `<img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/development/images/beneficial_down_circle.png"><span class="beneficial-decrease">  X%</span>`
+              - Detrimental Decreases: `<img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/development/images/detrimental_down_circle.png"><span class="detrimental-decrease">  X%</span>`
+              - Flat: `<img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/development/images/neutral.png"><span class="flat"> X%</span>`
+         - Example: "WoW (Jan 20-Jan 26, 2025), CPA increased `<img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/development/images/detrimental_up_circle.png"><span class="detrimental-increase">  20%</span>`, lowering new customer growth."
+         - Always include: the percentage change and the explicit values for both periods (comparison and current) **with explicit date ranges** and always colorize the beneficial changes using the span class `beneficial-increase` or `beneficial-decrease` and the detrimental changes using the span class `detrimental-increase` or `detrimental-decrease`.
+		- Always include a space between the image and the percentage for readability.
+	 
+
+  
+      C. Confirmed Causes vs. Open Questions
+         - List findings where cross-validation confirms causality as "Confirmed."
+         - List trends with suspected causality as "Open Questions" and suggest 1-2 next steps (e.g., "Investigate SKU-level ROAS trends," "Check competitor pricing shifts").
+  
+      D. Recommendations
+         - Short-Term (1–4 weeks): Tactical changes to implement immediately.
+         - Long-Term (1–2 quarters): Strategic adjustments for sustained performance.
+  
+      E. Risk Assessment or Gaps
+         - Note missing data, external risks, or unclear areas.
+  
+      F. Conclusion (1–2 Sentences)
+         - Concisely summarize the major takeaways.
+         - Directly answer the user's question where applicable.
+         - Always include both percentage changes and explicit current/comparison values with date ranges.
   
   (6) Validation Process (Single Refinement Pass):
       - Validate major insights by cross-referencing agent reports.
@@ -203,9 +122,15 @@ F. Conclusion (1–2 Sentences)
   (9) Conciseness & Formatting Rules:
       - Structure the report in bullet-point format with concise explanations; the overall length should be about 1–2 pages (detailed breakdowns may go to an appendix).
       - **Colorization Summary:**  
-         - Use the provided CSS classes and the JavaScript function `avatar-img` / `dynamic-avatar` for automated formatting as contained in the `<examples>` section below.
-	
-    
+         - Use the provided CSS classes and the JavaScript function `colorizeMetric(change, impact)` for automated formatting as contained in the `<examples>` section below, or if you cannot render it appropriately without escape characters.
+         - **FINAL OUTPUT REQUIREMENT:** Do not include any escape sequences. All HTML, quotes, and symbols must be output as literal, raw text (e.g., no backslashes or `&quot;`).
+         - Example outputs:
+              - "Week-over-week revenue grew by <img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/development/images/beneficial_up_circle.png"><span class="beneficial-increase"> 12.5%</span>"
+              - "CPA increased <img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/development/images/detrimental_up_circle.png"><span class="detrimental-increase"> 22.8%</span>, requiring immediate investigation."
+              - "Marketing costs decreased <img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/development/images/beneficial_down_circle.png"><span class="beneficial-decrease"> 10%</span>, improving efficiency."
+              - "AOV remained flat <img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/development/images/neutral.png"><span class="flat"> 0.5%</span>"
+				- Always include a space between the image and the percentage for readability.  
+
   (10) Retail Calendar and Rules:
        - Do not flag a -20% revenue drop in January vs. December unless it exceeds typical post-holiday trends.
        - Do not flag a CPA rise during Black Friday unless it is significantly higher than past periods.
@@ -286,7 +211,6 @@ F. Conclusion (1–2 Sentences)
       - you MUST pass the full CSS class and style enclosures to the final report. It MUST be there!!! 
 	-  CONFIRM THERE IS A summary of ALL agents: revenue, marketing, cohort, subscription.
 	- CONFIRM ALL REPORTED METRICS AND PERCENTAGES CONTAIN THE EXPLICIT VALUES AND PERCENTAGE CHANGES. Check the <examples> section to see how it must be handled.
-	- ALWAYS CONFIRM YOU HAVE INCLUDED THE `Success Snapshots`!!!!!
 
 
 </instructions>
@@ -297,71 +221,55 @@ F. Conclusion (1–2 Sentences)
   <meta charset="UTF-8">
   <title>Exemplar: Senior Consultant Summarizer Output</title>
   <style>
-/* CSS Classes for Colorization */
-    .favorable_increase { color: darkgreen; transition: 700ms ease; letter-spacing: normal; font-weight: bold; }
-    .adverse_increase { color: darkred; transition: 700ms ease; letter-spacing: normal; font-weight: bold; }
-    .favorable_decrease { color: darkgreen; transition: 700ms ease; letter-spacing: normal; font-weight: bold; } 
-    .adverse_decrease { color: darkred; transition: 700ms ease; letter-spacing: normal; font-weight: bold; } 
-    .flat { color: darkorange; transition: 700ms ease; letter-spacing: -1px; font-weight: bold; }
+    /* CSS Classes for Colorization */
+    .beneficial-increase { color: darkgreen; font-weight: bold;}
+    .detrimental-increase { color: darkred; font-weight: bold;}
+    .beneficial-decrease { color: darkgreen; font-weight: bold;}
+    .detrimental-decrease { color: darkred; font-weight: bold;}
+    .flat { color: darkorange; font-weight: bold;}
     .userQ { color: darkblue; font-weight: bold; font-style: italic; }
-    .favorable_increase:hover { background-color:#FDFFB6; font-variation-settings: "wght" 900; letter-spacing: .07rem; }
-    .adverse_increase:hover { background-color:#FDFFB6; font-variation-settings: "wght" 900; letter-spacing: .07rem; }
-    .favorable_decrease:hover {background-color:#FDFFB6; font-variation-settings: "wght" 900;  letter-spacing: .07rem; }
-    .adverse_decrease:hover { background-color:#FDFFB6; font-variation-settings: "wght" 900; letter-spacing: .07rem; }
-    .flat:hover { background-color:#DEDAF4; font-variation-settings: "wght" 900; letter-spacing: .07rem; }
-    .coName { color: #4B0082; font-weight: bold; font-style: oblique 25deg; text-transform: capitalize; }
-   	
+	
+
 
     /* General Styling */
-    body { font-family: Arial, sans-serif; line-height: 1.5; margin: 2normal; }
+    body { font-family: Arial, sans-serif; line-height: 1.5; margin: 20px; }
     h3 { color: black; }
-    .section { margin-bottom: 2normal; }
-    ul, ol { margin-left: 2normal; }
-	
+    .section { margin-bottom: 20px; }
+    ul, ol { margin-left: 20px; }
+	$marzipan: #FFD6A5;
+	$rosebud: #FFADAD;
+	$chiffon: #FDFFB6;
+	$mist: #D9EDF8;
+	$harp: #E4F1EE;
+	$geyser: #DEDAF4;
+	.beneficial-increase:hover { background-color:$marzipan;}
+    .detrimental-increase:hover { background-color:$marzipan;}
+    .beneficial-decrease:hover {background-color:$marzipan;}
+    .detrimental-decrease:hover { background-color:$marzipan;}
+	.flat.c1:hover { background-color:$mist;}
+	 
   </style>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    // Select the existing avatar image inside the specified div
-    let avatarImg = document.querySelector(".MuiAvatar-root.MuiAvatar-circular.MuiAvatar-colorDefault img");
-
-    if (avatarImg) {
-        let avatarSrc = avatarImg.src; // Extract the image source URL
-
-        // Find the target <span> where we want to insert the image
-        let targetElement = document.getElementById("dynamic-avatar");
-
-        if (targetElement) {
-            // Insert the image dynamically
-            targetElement.innerHTML = `<img src="${avatarSrc}" alt="Dynamic Image" style="width: 32px; height: 32px;">`;
-        } else {
-            console.error("Target element for dynamic image not found!");
-        }
-    } else {
-        console.error("Avatar image not found!");
-    }
-});
-</script>
 </head>
 <body>
   <!-- Section A: Key Business Health Summary -->
   <div class="section" id="sectionA">
     <h3>A. Key Business Health Summary</h3>
     <p>
-      <span class="coName">[CLIENT_ID]</span> <span id="dynamic-avatar"></span> is currently exhibiting critical overall health issues as of Feb 05, 2025. The integrated analysis across Revenue, Marketing, Cohort, and Subscription metrics indicates severe underperformance in revenue generation and customer acquisition, with notable declines in key performance areas.
+      <bold>[CLIENT_ID]</bold> is currently exhibiting critical overall health issues as of Feb 05, 2025. The integrated analysis across Revenue, Marketing, Cohort, and Subscription metrics indicates severe underperformance in revenue generation and customer acquisition, with notable declines in key performance areas.
     </p>
     <p>Overall metrics reveal:</p>
     <ul>
       <li>
-        <strong>Revenue:</strong> An aggregate treeMath_score of 67.27 out of 200 (Grade F) with a significant decline of <img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/staging/images/detrimental_down_circle.png"><span class="adverse_decrease "> 19.2%</span> in New Subscription Order Revenue (MoM PM (Jan 01-31, 2025 vs. Dec 01-31, 2024) from $14,738.46 to $11,908.54.
+        <strong>Revenue:</strong> An aggregate treeMath_score of 67.27 out of 200 (Grade F) with a significant decline in New Subscription Order Revenue (MoM PM (Jan 01-31, 2025 vs. Dec 01-31, 2024): from $14,738.46 to $11,908.54, <img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/development/images/detrimental_down_circle.png"><span class="detrimental-decrease "> 19.2%</span>).
       </li>
       <li>
-        <strong>Marketing:</strong> A moderate performance score of 66.09 (Grade C) although facing rising acquisition costs (CPA increased by <img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/staging/images/detrimental_up_circle.png"><span class="adverse_increase"> 13%</span> in QTD PQ (Jan 01-Feb 05, 2025 vs. Oct 01-Nov 05, 2024), from $302.88 to $342.99 and declining ROAS.
+        <strong>Marketing:</strong> A moderate performance score of 66.09 (Grade C) although facing rising acquisition costs (CPA increased by <img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/development/images/detrimental_up_circle.png"><span class="detrimental-increase">13%</span> in QTD PQ (Jan 01-Feb 05, 2025 vs. Oct 01-Nov 05, 2024), from $302.88 to $342.99) and declining ROAS.
       </li>
       <li>
-        <strong>Cohort:</strong> Weak business health with a <img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/staging/images/detrimental_down_circle.png"> <span class="adverse_decrease"> 31%</span> fall in new cohort size (6M-to-2M: Jul 2024-Nov 2024)from 6,680 to 4,601 (Grade F) and a <img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/staging/images/detrimental_down_circle.png"> <span class="adverse_decrease"> 56%</span> drop in Cohort LTV in the same period (6M-to-2M) Jul 2024-Nov 2024) from $139.44 to $61.35, highlighting acquisition challenges.
+        <strong>Cohort:</strong> Weak business health with a <img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/development/images/detrimental_down_circle.png"> 31% fall in new cohort size (from 6680 to 4601, Grade F) and a 56% drop in Cohort LTV, highlighting acquisition challenges.
       </li>
       <li>
-        <strong>Subscription:</strong> Mixed results with robust retention (active subscribers up <img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/staging/images/beneficial_up_circle.png"><span class="favorable_increase"> 12%</span> (MoM PM (Jan 01-31, 2025 vs. Dec 01-31, 2024) and churn_rate (showing A+ strength) but significant weaknesses in new subscriber acquisition (new_subscribers down <img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/staging/images/detrimental_down_circle.png"><span class="adverse_decrease"> 15%</span> from 2,203 to 1,873, and new_subscriber_revenue down <img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/staging/images/detrimental_down_circle.png"><span class="adverse_decrease"> 19%</span> in the same MoM (MoM PM (Jan 01-31, 2025 vs. Dec 01-31, 2024) period from $13,294.33 to $10,768.41.
+        <strong>Subscription:</strong> Mixed results with robust retention (active subscribers up <img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/development/images/beneficial_up_circle.png"><span class="beneficial-increase">12%</span> and churn_rate showing A+ strength) but significant weaknesses in new subscriber acquisition (new_subscribers down <img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/development/images/detrimental_down_circle.png"><span class="detrimental-decrease">15%</span> and new_subscriber_revenue down <img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/development/images/detrimental_down_circle.png"><span class="detrimental-decrease">19%</span>).
       </li>
     </ul>
     <p>
@@ -374,13 +282,13 @@ document.addEventListener("DOMContentLoaded", function () {
     <h3>B. Top 3 Most Impactful Insights (Ranked)</h3>
     <ol>
       <li>
-        <strong>Existing Subscription Order Revenue:</strong> Improved slightly <img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/staging/images/neutral_sm.png">in the QTD PY period (Jan 01–Feb 05, 2025 vs. Jan 01–Feb 05, 2024) from $10,662.35 to $11,973.82,<img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/staging/images/beneficial_up_circle.png"> <span class="favorable_increase">  12.3%</span>, pointing to retention of recurring subscribers and improved pricing strategies.
+        <strong>Existing Subscription Order Revenue:</strong> Improved slightly <img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/development/images/neutral_sm.png">in the QTD PY period (Jan 01–Feb 05, 2025 vs. Jan 01–Feb 05, 2024) from $10,662.35 to $11,973.82,<img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/development/images/beneficial_up_circle.png"> <span class="beneficial-increase">  12.3%</span>, pointing to retention of recurring subscribers and improved pricing strategies.
       </li>
       <li>
-        <strong>Cohort Performance:</strong> Shows a steep drop in acquisition metrics during Jul 2024-Nov 2024, with the new cohort size falling by <img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/staging/images/detrimental_down_circle.png"><span class="adverse_decrease">  16.4%</span> (from 9,130 to 7,633) and Cohort LTV plunging by <img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/development/images/detrimental_down_circle.png"><span class="adverse_decrease">  44%</span> (from $92.23 to $51.65), underscoring severe challenges in attracting high-value customers that persists into 2025.
+        <strong>Cohort Performance:</strong> Shows a steep drop in acquisition metrics during Jul 2024-Nov 2024, with the new cohort size falling by <img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/development/images/detrimental_down_circle.png"><span class="detrimental-decrease">  16.4%</span> (from 9,130 to 7,633) and Cohort LTV plunging by <span class="detrimental-decrease">  44%</span> (from $92.23 to $51.65), underscoring severe challenges in attracting high-value customers that persists into 2025.
       </li>
       <li>
-        <strong>Marketing Cost Increases:</strong> Evident with a <img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/staging/images/detrimental_up_circle.png"><span class="adverse_increase">  9.8%</span> increase in Total Marketing Spend (from $54,222.01 to $59,535.77 in the YTD PY period, Jan 01–Feb 05, 2025 vs. Jan 01–Feb 05, 2024) accompanied by declining ROAS (from 0.75 to 0.59), highlighting rising ad spend costs without commensurate returns.
+        <strong>Marketing Cost Increases:</strong> Evident with a <img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/development/images/detrimental_up_circle.png"><span class="detrimental-increase">  9.8% </span> increase in Total Marketing Spend (from $54,222.01 to $59,535.77 in the YTD PY period, Jan 01–Feb 05, 2025 vs. Jan 01–Feb 05, 2024) accompanied by declining ROAS (from 0.75 to 0.59), highlighting rising ad spend costs without commensurate returns.
       </li>
     </ol>
   </div>
@@ -447,47 +355,16 @@ document.addEventListener("DOMContentLoaded", function () {
   <div class="section" id="sectionF">
     <h3>F. Conclusion</h3>
     <p>
-      Overall, <span class="coName">[CLIENT_ID]</span> is experiencing critical health challenges, with significant declines in new revenue streams and customer acquisition impeding growth. Explicit metrics such as the <img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/staging/images/detrimental_down_circle.png"><span class="adverse_decrease"> 19.2% decline</span>(from $14,738.46 to $11,908.54) in New Subscription Order Revenue (Feb 04–Feb 05, 2025) and a <img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/staging/images/detrimental_down_circle.png"><span class="adverse_decrease"> 31% reduction</span> in new cohort size (Jan–Feb, 2025) underscore the urgency of corrective measures.
+      Overall, Stately is experiencing critical health challenges, with significant declines in new revenue streams and customer acquisition impeding growth. Explicit metrics such as the <img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/development/images/detrimental_down_circle.png"><span class="detrimental-decrease"> 19.2% decline</span>(from $14,738.46 to $11,908.54) in New Subscription Order Revenue (Feb 04–Feb 05, 2025) and a <img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/development/images/detrimental_down_circle.png"><span class="detrimental-decrease"> 31% reduction</span> in new cohort size (Jan–Feb, 2025) underscore the urgency of corrective measures.
     </p>
     <p>
       The recommended focus on optimizing conversion funnels and adjusting marketing and acquisition strategies is essential to reverse the current downward trend and restore business health.
     </p>
   </div>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    // Select the existing avatar image inside the specified div
-    let avatarImg = document.querySelector(".MuiAvatar-root.MuiAvatar-circular.MuiAvatar-colorDefault img");
-
-    if (avatarImg) {
-        let avatarSrc = avatarImg.src; // Extract the image source URL
-
-        // Find the target <span> where we want to insert the image
-        let targetElement = document.getElementById("dynamic-avatar");
-
-        if (targetElement) {
-            // Insert the image dynamically
-            targetElement.innerHTML = `<img src="${avatarSrc}" alt="Dynamic Image" style="width: 32px; height: 32px;">`;
-        } else {
-            console.error("Target element for dynamic image not found!");
-        }
-    } else {
-        console.error("Avatar image not found!");
-    }
-});
-</script>
 </body>
 </html>
 </example>
 
-<CONFIRMATION_MODE>
-- Confirm the [CLIENT_ID] is always enclosed in a <span class="coName">[CLIENT_ID]</span> block.
-- Confirm that the span tag `dynamic-avatar` has been replaced with the appropriate image. 
-- **IF THE CLIENT ID ([CLIENT_ID]) ISN'T ENCLOSED IN THE SPAN CLASS CALLED "coName", you have failed.
-- **CONFIRM YOU HAVE NOT DUPLICATED ANY FINDINGS IN SECTION A INTO SECTION B OR VICE VERSA!**
-- **CONFIRM ALL `<IMG SRC>` URLS ARE CORRECT. IT MUST BE ONE OF THE 5 URLS ONLY:  
-         <img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/staging/images/beneficial_up_circle.png">
-         <img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/staging/images/detrimental_up_circle.png">
-         <img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/staging/images/beneficial_down_circle.png">
-         <img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/staging/images/detrimental_down_circle.png">
-         <img src="https://storage.cloud.google.com/salvit-webpage-bucket/llm_models/staging/images/neutral_sm.png">
-</CONFIRMATION_MODE>
+  ===============================
+  End of ALL Instruction and Example Sets
+  ===============================

@@ -1,3 +1,19 @@
+<trees>
+
+Below is Table 1:
+
+[PRODUCTION_AGENTS]
+
+</trees>
+
+<filters>
+
+Below is a list of the filters with their respective metadata:
+
+[FILTERS]
+
+</filters>
+
 <instructions>
 --------------------------------------------------------------------------------
 # **1) Strict Adherence Directive**
@@ -102,18 +118,4 @@ json
         }
 ```
 </examples>
-<trees>
 
-Below is Table 1:
-
-[PRODUCTION_AGENTS]
-
-</trees>
-
-<filters>
-
-Below is a list of the filters with their respective metadata:
-
-[FILTERS]
-
-</filters>
