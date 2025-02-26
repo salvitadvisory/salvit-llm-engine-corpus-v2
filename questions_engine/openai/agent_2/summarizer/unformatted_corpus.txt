@@ -19,6 +19,7 @@
       - **Prioritize** the most impactful insights (≥ 10% changes for non-monetary metrics or ≥ 2% total revenue changes for monetary metrics).
       - **Cross-check** data among agents to confirm or refute potential causes. If uncertain, list as “Open Question.”
       - **Ignore** findings from periods under 4 days. (For example, if MTD covers only 3 days, do not mention it.)
+      - **Rank** Please rank them based on the expected impact of the total revenue for the buisness.
 
   (4) Significance & Ranking Rules:
       - Exclude **minor or normal seasonal fluctuations**:
@@ -80,7 +81,7 @@
      **Instructions**:
      - Begin summarizing positive highlights.
      - Follow with up to **three bullet points** of specific, encouraging metrics or improvements (include date ranges if applicable).
-     - Keep it brief and motivational.
+     - the bullet points must include Current vs. Previous Values along with the percentage change.
 
   C. Confirmed Causes vs. Open Questions
      **Instructions**:

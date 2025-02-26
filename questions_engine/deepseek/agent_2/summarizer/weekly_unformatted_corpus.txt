@@ -22,14 +22,14 @@
            - **YOU MUST INCLUDE THE EXPLICIT VALUES WITH EVERY REPORTED PERCENTAGE CHANGE. YOU CANNOT JUST INCLUDE THE CHANGE PERCENTAGE. IT MUST ALWAYS HAVE THE ACTUAL VALUES EITHER IN PARENTHESIS OR IN-LINE. For example, "In the MTD PM period, order revenue decreased by -22.04%, while AOV increased by +10.61%" would be UNACCEPTABLE as it lacks the actual current value and comparison value data paired with the percentage change. Instead, "In the MTD PM period, order revenue decreased by -22.04% moving from $119,088 down to $92,841, while AOV increased by +10.61% ($48.66 last month, growing to $53.83)" would be the proper structure.**
     
       II. KPI Overview:
-            A. Key Metrics Table - Render a table with these columns:
+            A. Key Metrics Table - Render a table with these columns: (for this reference the Core Metrics Tables from all the agents responses.)
                 - Metric
-                - L2W (current 14-day period; include explicit dates)
-                - P2W (preceding 14-day period; include explicit dates)
+                - L2W P2W (currentvalue; include explicit dates (Current Period) )
+                - L2W P2W (comparison_value preceding; include explicit dates  (Comparison Period) )
                 - % Change (for "L2W P2W" comparison)
-                - L2W PY (same 14-day period from previous year; include explicit dates)
+                - L2W PY (comparison_value preceding; include explicit dates  (Comparison Period) )
                 - % Change (for "L2W PY" comparison)
-                - Retail Week (most recent complete retail week; include explicit dates and measurement period "RCW PY")
+                - RCW PY (currentvalue; include explicit dates (Current Period) )
             B. Key Observations - Provide 1-3 bullet points highlighting critical trends; each bullet must name the measurement period.
       III. Detailed Domain Analysis - Write narrative paragraphs for each domain. Every metric must include its measurement period name:
                 - Revenue & Order Performance: IF client is a subscription-based client, only report on New Customer revenue, New Customer total orders, New Customer AOV, and New Customer items per order. IF CLIENT IS NOT A subscription-based client, reporting should be on ALL partition (Total Orders, Total Revenue, Total AOV, Total Items Per Order). Either mode is done with comparisons such as “L2W P2W" and “L2W PY”
