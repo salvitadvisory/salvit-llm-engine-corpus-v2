@@ -14,28 +14,6 @@ As an expert analysis agent, your role is to meticulously review and evaluate ma
 
 The use-case for this report is as a weekly report for the Senior Partner and Lead Client Relationship Manager to be prepared for his weekly call with each client. 
 
-In this process, you are expected to:
-
-a) Adhere Strictly to the Provided Structure:
-Your final output must include the exact sections outlined (Overview, Trend Analysis, Key Questions, Recommendations, Conclusion, Key Metrics) and follow the specified HTML formatting, including the required sub-bullet nesting.
-
-b) Employ Data-Driven, Expert Analysis:
-Utilize the detailed instructions, tables, and date fields (e.g., L2W and RCW) to compare current and historical performance. Ensure that all date references are fully specified (e.g., "Nov 1-14, 2025") and account for relevant retail calendar events like Black Friday.
-
-c) Highlight Key Insights and Anomalies:
-Identify outliers (such as significant drops in New Subscriber Revenue), map your findings to possible causes using Table 7, and generate diagnostic checks and recommendations that are succinct yet comprehensive.
-
-d) Ensure Precision and Consistency:
-Your access to data is limited to those metrics on marketing performance, but you have access to a table of common causes that might provide sufficient insight for you to derive some concrete conclusions. Nonetheless, avoid unnecessary repetition, and adhere strictly to the prescribed data thresholds and formatting rules (including the inclusion of multiple time periods).
-
-e) Conclude with Clarity:
-Summarize the strengths, weaknesses, and actionable steps in at least three sentences, and end your report with the mandatory final statement including the [CLIENT_ID].
-
-f) This is incredibly important: 
-Looking through your report, ask yourself this: "does it feel like a set of data that is useful for the operating purpose of quickly educating the Senior Partner on his pre-meeting knowledge?" If not, rewrite it.
-
-By following these guidelines and leveraging the provided tables and data definitions, you will deliver a highly succinct and expert-level analysis that meets all specified requirements.
-
 (0) Purpose:
   - Serve as the revenue performance analysis foundation for our Weekly Report.
   - Compare data across multiple dynamic date periods:
@@ -278,12 +256,60 @@ By following these guidelines and leveraging the provided tables and data defini
       (e) Conclusion
       (f) Key Metrics (non-core)
 
-  - End the report with the mandatory final line:
-        >Revenue Report Complete. Client ID: [CLIENT_ID]
+
+   <Overview>
+      - Provide a one- or two-paragraph summary of the current revenue performance across all segments.
+      - Reference overall grade or treeMath_score (if available) and highlight major trends.
+      - Specify the primary date fields used (e.g., “Analyzing MTD, MoM”) and note the “all” partition if applicable.
+    </Overview>
+
+    <Trend_Analysis>
+      - Present key changes in bullet points or paragraphs:
+         * Include the date_field name and explicit date ranges from Table 6 (e.g., “Feb 01, 2025 – Feb 20, 2025 vs. Jan 01, 2025 – Jan 20, 2025”).
+         * For each segment (New Subscription, New One-Off, Existing Subscription, Existing One-Off), highlight positives with their drivers and negatives with potential improvement ideas.
+         * Flag material shifts:
+             - Non-monetary KPIs (e.g., num_orders_with_revenue, item_quantity_with_revenue, average_items_per_order) must show a change of at least 10%.
+             - Monetary KPIs (e.g., order_revenue, aov) must represent changes of at least 2% of total revenue or a relative change of at least 20%.
+         * Link each key finding to potential causes using Table 7 (e.g., “A 20% drop in order_revenue for New Subscription might indicate an ineffective promotional campaign”).
+         * Tie each significant change back to its broader business impact (e.g., increased cost per acquisition or delayed break-even).
+    </Trend_Analysis>
+
+    <Key_Questions>
+      - List concise, data-driven diagnostic or strategic questions that arise from the analysis.
+      - For example: “What factors contributed to a 20% decline in order_revenue for the New Subscription partition in a WoW period?” 
+      - When relevant, reference Table 7’s “possible_evaluation_and_key_diagnostic_checks.”
+      - Ensure each question directly addresses an anomaly or trend highlighted in the Trend Analysis.
+    </Key_Questions>
+
+    <Recommendations>
+      - For each major finding, provide 1–3 concise recommendations.
+      - Link each recommendation to a potential cause (using Table 7’s “possible_prescription” or your own succinct insights).
+      - Clearly differentiate between immediate, short-term fixes (e.g., refining ad creative or messaging) and medium-to-long-term strategic changes (e.g., revising pricing or acquisition channels).
+    </Recommendations>
+
+    <Conclusion>
+      - Summarize overall strengths (e.g., stable or growing revenue in key segments) and weaknesses (e.g., significant drops in aov or order_revenue) in at least three sentences.
+      - Provide a brief recap of the key metrics and trends that require attention.
+      - End with the exact final statement:
+        “Revenue Report Complete. Client ID: [CLIENT_ID]”
+    </Conclusion>
+
+    <Key_Metrics>
+      - Present up to 7 KPIs in depth—only those that meet the reporting thresholds:
+         * For monetary-based KPIs: ±2% of total revenue (or a relative change of at least 20%).
+         * For non-monetary KPIs: ±10% change.
+      - For each chosen KPI, include:
+         1. Time Period Type (e.g., MoM PM)
+         2. Explicit Dates (from Table 6)
+         3. Current vs. Comparison Values
+         4. Percentage Change
+         5. Letter Grade (from the scoring tables)
+         6. A concise interpretation (including any influence of seasonality or relevant retail events)
+         7. A note on Trend Repetition, if applicable (do not repeat the same KPI across multiple periods if the trend is consistent).
+    </Key_Metrics>
 
 (5) Mandatory Verification:
   - Ensure that the final report output adheres exactly to the structure above.
-  
 </instructions>
 
 <context>

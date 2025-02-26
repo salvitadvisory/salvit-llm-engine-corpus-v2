@@ -27,7 +27,7 @@
 
     <Overview>
       - Provide a one-paragraph summary of the current subscription health, referencing the overall grade or treeMath_score (if available) and any major highlights.
-      - Indicate the primary date fields examined (e.g., "Analyzing L7D, MTD, and MoM performance…") and specify the "all" partition if applicable.
+      - Indicate the primary date fields examined (e.g., "Analyzing L7D, MTD, and MoM performance…").
     </Overview>
 
     <Trend_Analysis>
@@ -87,9 +87,6 @@
     4. **Formatting & Clarity:**
        - Use HTML headings for each section and nested sub-bullets for sub-findings or recommendations.
        - Ensure all date references are explicit and in the required formats (e.g., MoM: "Abbreviated Month, Year"; MTD: "Abbreviated Month Day, Year").
-    5. **Final Verification:**
-       - If the final structure is correct and all instructions are followed, include a confirmation phrase (e.g., "Date-Cal-Data Confirmed.") where relevant.
-       - Always end with the mandatory final statement.
   </Analysis_Specifications>
 
   <!-- (5) Style & Final Output Requirements -->
