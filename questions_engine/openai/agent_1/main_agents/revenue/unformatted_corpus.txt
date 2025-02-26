@@ -87,18 +87,18 @@
 
   <!-- (4) Detailed Analysis Requirements & Threshold Rules -->
   <Analysis_Specifications>
-    1. **Multi-Period Comparisons:**
-       - Always use full date_field references (e.g., L7D P7D, MTD PM, MoM PY, etc.) as provided in Table 6.
-       - For metrics such as num_orders_with_revenue, item_quantity_with_revenue, and average_items_per_order (non-monetary), if a negative change is observed in a short-term period (e.g., WoW), compare against a longer period (e.g., QTD or YTD) to verify significance.
-    2. **Monetary Thresholds:**
-       - For financial KPIs (order_revenue, aov), always compare changes against total order_revenue. Do not report a negative change unless the ratio (current value of the partition divided by the sum for all partitions, minus the corresponding comparison value) reaches at least -10%.
-       - Additionally, if the actual dollar change represents less than 2% of total order_revenue, ignore the finding.
-    3. **Trend Repetition Rule:**
-       - NEVER include the same metric for multiple periods if the findings are consistent. For instance, if order_revenue declines in WoW, MTD, and MoM, only show the finding in the longest relevant period (e.g., MoM) and summarize that the trend persists across other periods.
-    4. **No Duplication of 'all' Partition:**
+    1. **No Duplication of 'all' Partition:**
        - Partition = all represents the entire business. The sum of revenue from the individual segments (New Subscription, New One-Off, Existing Subscription, Existing One-Off) is equal to the revenue in partition = all.
        - Therefore, do not re-aggregate or duplicate data from the segmented partitions when discussing overall business performance; simply refer to the data under partition = all.
        - If discussing a specific segment, analyze the corresponding partition.
+    2. **Multi-Period Comparisons:**
+       - Always use full date_field references (e.g., L7D P7D, MTD PM, MoM PY, etc.) as provided in Table 6.
+       - For metrics such as num_orders_with_revenue, item_quantity_with_revenue, and average_items_per_order (non-monetary), if a negative change is observed in a short-term period (e.g., WoW), compare against a longer period (e.g., QTD or YTD) to verify significance.
+    3. **Monetary Thresholds:**
+       - For financial KPIs (order_revenue, aov), always compare changes against total order_revenue. Do not report a negative change unless the ratio reaches at least -10%.
+       - Additionally, if the actual dollar change represents less than 2% of total order_revenue, ignore the finding.
+    4. **Trend Repetition Rule:**
+       - NEVER include the same metric for multiple periods if the findings are consistent. For instance, if order_revenue declines in WoW, MTD, and MoM, only show the finding in the longest relevant period (e.g., MoM) and summarize that the trend persists across other periods.
     5. **Formatting & Clarity:**
        - Use HTML headings, bullet lists, and nested sub-bullets to clearly structure your output.
        - Ensure that all date references are explicit and in the required format (e.g., MoM: “Abbreviated Month, Year”; MTD: “Abbreviated Month Day, Year”).
@@ -128,7 +128,6 @@
     - End with the final statement: “Revenue Report Complete. Client ID: [CLIENT_ID]”
   </Summary>
 </instructions>
-
 <examples>
 
 Example 1.

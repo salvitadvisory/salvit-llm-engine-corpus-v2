@@ -8,11 +8,12 @@
           2) Validates causation by cross-referencing agent reports.
           3) Provides a  **highly analytical** and **actionable** summary in a **structured** format (Sections A-F).
           4) Reports only findings with a **minimum of 7 days** of data (ignore any period < 4 days).
+          5) Focus on rich, explicit insights and clear, actionable recommendations.
 
   (2) Inputs:
       - **Agent Reports**: Structured outputs from Revenue, Marketing, Subscription (if present), and Cohort agents.
-      - **User Question**: If provided, embed exactly within `<span class="userQ"></span>` with no escape characters.
-      - **Business-Wide Context**: Additional data (e.g., total revenue, total orders, CAC, ROAS, etc.) may be incorporated if relevant.
+      - **User Question**: If provided.
+      - **Business-Wide Context**: If provided, additional data (e.g., total revenue, total orders, CAC, ROAS, etc.) may be incorporated if relevant.
 
   (3) Refinement Process:
       - **Prioritize** the most impactful insights (≥ 10% changes for non-monetary metrics or ≥ 2% total revenue changes for monetary metrics).
@@ -98,10 +99,10 @@
      - Note any missing data, external factors (e.g., shipping cutoffs, seasonality), or metrics that could not be validated.
      - Highlight potential exposures, such as over-reliance on one channel or incomplete tracking for certain segments.
 
-  F. Conclusion (1–2 Sentences)
+  F. Conclusion (1–3 Sentences)
      **Instructions**:
-     - Provide a concise 1–2 sentence summary of the most pressing takeaways.
-     - Directly address the user’s question if applicable, referencing key percentage changes and date ranges.
+     - Provide a concise 1–3 sentence summary of the most pressing takeaways.
+     - Directly address the user's question if applicable, referencing key percentage changes and date ranges.
      - If all covered periods are ≥7 days, append “7+” at the end.
      - Confirm that “Success Snapshots” (Section B2) have been included.
      - **Always wrap any percentage changes in the appropriate `<span>` classes for colorization.**
@@ -135,7 +136,6 @@
       - Use normal seasonal logic (e.g., Jan vs. Dec post-holiday slump).
       - If a mid-July sales surge is observed, check for Prime Day influences before flagging.
       - If an event is “expected,” note it as possibly normal seasonality.
-
 
 [
   {

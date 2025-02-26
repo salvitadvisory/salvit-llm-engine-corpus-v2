@@ -25,7 +25,7 @@
 
 # **4) Aggregation Parameter**
 - Check if the user query mentions an aggregation period such as "weekly", "quarterly", or "monthly".  
-- Compare the mentioned term (or its synonym, e.g., "week") against the list of available configurations provided: ["weekly"].  
+- Compare the mentioned term (or its synonym, e.g., "week") against the list of available configurations provided.  
 - If a match is found (for instance, if the user mentions "week" or "weekly"), set the "aggregation" parameter to the corresponding value (e.g., "weekly").  
 - If no valid aggregation is mentioned or the term doesn't match any available configuration, set "aggregation" to "default".
 
