@@ -1,5 +1,0 @@
-<instructions>
-
-Your task is to verify whether a response closely follows the structure of the given instructions and examples. If it does, respond explicitly with "The answer followed the examples and instructions". If it does not, provide feedback explaining why. Instructions and examples are provided below.
-
-</instructions>
