@@ -312,6 +312,297 @@ The use-case for this report is as a weekly report for the Senior Partner and Le
   - Ensure that the final report output adheres exactly to the structure above.
 </instructions>
 
+<examples>
+Example 1.
+<h1>Overview</h1>
+<p>The revenue health across the business appears strong when analyzed over the key periods L2W P2W, L2W PY, and RCW PY. Overall total order revenue ("order_revenue") for the entire business ("all") increased by 9.21% in the recent twoâ€week period compared to the immediately preceding two weeks (rising from $2,382,232 to $2,601,705, with a grade of B). When compared year-over-year, total revenue grew 17.01% (from $2,223,495 to $2,601,705, grade Aâ€“), while the most recent complete retail week (RCW PY) registered a robust 25.57% increase (from $1,018,695 to $1,279,202, grade A+). Notably, the positive momentum is driven primarily by the Existing One-Off segment which has outperformed New One-Off in terms of percentage gains.</p>
+<p>This analysis focuses primarily on the L2W P2W, L2W PY, and RCW PY comparisons. With an overall treeMath_score of 85.01, the revenue performance is healthy and indicates actionable areas to further optimize revenue growth through campaign refinement and targeted promotions.</p>
+
+<h1>Trend Analysis</h1>
+<ul>
+  <li><strong>L2W P2W:</strong>
+    <ul>
+      <li>Overall revenue ("all") increased by 9.21% from $2,382,232 to $2,601,705 (Grade B).</li>
+      <li>Existing One-Off revenue rose by 22.25% (from $1,065,832 to approximately $1,303,009, Grade B+), suggesting strong performance in repeat or established customer transactions.</li>
+      <li>New One-Off revenue improved by 7.02% (from $1,213,465 to about $1,298,695, Grade B), indicating modest gains in new transactional revenue.</li>
+      <li>This period shows a positive week-over-week uptick, though the improvement in the New One-Off partition is less pronounced relative to Existing One-Off.</li>
+    </ul>
+  </li>
+  <li><strong>L2W PY:</strong>
+    <ul>
+      <li>Year-over-year, overall revenue increased by 17.01% (from $2,223,495 to $2,601,705, Grade Aâ€“), marking healthy growth compared with the same biweekly period in the previous year.</li>
+      <li>Existing One-Off revenue increased by 22.25% (Grade A), while New One-Off moved up by 12.18% (Grade B+), underscoring the importance of established customer segments in driving year-over-year improvements.</li>
+    </ul>
+  </li>
+  <li><strong>RCW PY:</strong>
+    <ul>
+      <li>The RCW PY comparison for the entire business shows an impressive 25.57% increase in revenue (from $1,018,695 to $1,279,202, Grade A+), indicating strong performance in the most recent complete retail week.</li>
+      <li>Breaking it down, Existing One-Off revenue grew by 32.50% (Grade A+), while New One-Off revenue increased by 19.25% (Grade Aâ€“). These results suggest that recent promotional efforts or operational adjustments may be resonating particularly well with existing customers.</li>
+    </ul>
+  </li>
+</ul>
+
+<h1>Key Questions</h1>
+<ul>
+  <li>What specific factors or campaign elements contributed to the more pronounced revenue growth in the Existing One-Off partition compared to the New One-Off segment?</li>
+  <li>Are there product mix or pricing strategies in place that might have driven the stronger RCW PY performance (notably a 25.57% increase overall) and can these be leveraged in upcoming weeks?</li>
+  <li>Should the New One-Off segment be targeted with additional acquisition or promotional initiatives to accelerate its growth to match the performance seen among existing customers?</li>
+</ul>
+
+<h1>Recommendations</h1>
+<ul>
+  <li><strong>For Existing One-Off:</strong> Build on the strong 22â€“32% revenue growth by continuing targeted retention campaigns and analyzing successful product mixes from this segment. Consider further incentives for repeat purchases to sustain momentum.</li>
+  <li><strong>For New One-Off:</strong> Given the more modest gains (7.02% in L2W P2W and 12.18% in L2W PY), explore targeted new customer acquisition strategies, such as promotional discounts, enhanced digital marketing, or improved on-site experiences to convert more first-time buyers.</li>
+  <li><strong>Overall:</strong> Leverage the clear seasonal/period-based upward trend demonstrated in RCW PY by aligning marketing campaigns and promotional efforts during similar retail weeks to maximize revenue impact.</li>
+</ul>
+
+<h1>Conclusion</h1>
+<p>The revenue performance across key time periods shows a consistently upward trend. The week-over-week improvement (L2W P2W) is moderate overall, but year-over-year comparisons (L2W PY and RCW PY) indicate robust growthâ€”especially in the Existing One-Off segment. These findings suggest that the business's retention and repeat purchase strategies are paying off, while there is room for improvement in acquiring new one-off customers. Monitoring and enhancing targeted campaigns for new customer segments, while leveraging strategies that work well in the existing customer base, should further bolster overall revenue health.</p>
+<p>By focusing on these trends and examining product mix, pricing, and promotional efforts, strategic adjustments can be made to sustain and even accelerate this growth. Revenue Report Complete. Client ID: [CLIENT_ID]</p>
+
+<h1>Key Metrics</h1>
+<table border="1" cellspacing="0" cellpadding="5">
+  <tr>
+    <th>Time Period Type</th>
+    <th>Explicit Dates</th>
+    <th>Current vs. Comparison Values</th>
+    <th>Percentage Change</th>
+    <th>Letter Grade</th>
+    <th>Interpretation</th>
+    <th>Trend Repetition</th>
+  </tr>
+  <!-- L2W P2W Overall Revenue -->
+  <tr>
+    <td>L2W P2W - all</td>
+    <td>2025-02-10 to 2025-02-24 (Current) vs. 2025-01-27 to 2025-02-09 (Comparison)</td>
+    <td>$2,601,705 vs. $2,382,232</td>
+    <td>+9.21%</td>
+    <td>B</td>
+    <td>Overall revenue improved moderately, driven by gains in both customer segments.</td>
+    <td>Unique</td>
+  </tr>
+  <!-- L2W P2W Existing One-Off -->
+  <tr>
+    <td>L2W P2W - Existing One-Off</td>
+    <td>2025-02-10 to 2025-02-24 vs. 2025-01-27 to 2025-02-09</td>
+    <td>$1,303,009 vs. $1,065,832</td>
+    <td>+22.25%</td>
+    <td>B+</td>
+    <td>Strong revenue lift indicating effective retention and repeat purchase strategies.</td>
+    <td>Not Repeated</td>
+  </tr>
+  <!-- L2W P2W New One-Off -->
+  <tr>
+    <td>L2W P2W - New One-Off</td>
+    <td>2025-02-10 to 2025-02-24 vs. 2025-01-27 to 2025-02-09</td>
+    <td>$1,298,695 vs. $1,213,465</td>
+    <td>+7.02%</td>
+    <td>B</td>
+    <td>Moderate growth; potential exists for higher impact by refining acquisition channels.</td>
+    <td>Not Repeated</td>
+  </tr>
+  <!-- L2W PY Overall Revenue -->
+  <tr>
+    <td>L2W PY - all</td>
+    <td>2025-02-10 to 2025-02-24 (Current) vs. 2024-02-10 to 2024-02-24 (Comparison)</td>
+    <td>$2,601,705 vs. $2,223,495</td>
+    <td>+17.01%</td>
+    <td>Aâ€“</td>
+    <td>This year-over-year increase reinforces sustainable revenue growth compared to last year's period.</td>
+    <td>Distinct</td>
+  </tr>
+  <!-- L2W PY RCW Overall Revenue -->
+  <tr>
+    <td>RCW PY - all</td>
+    <td>2025-02-16 to 2025-02-22 (Current) vs. 2024-02-18 to 2024-02-24 (Comparison)</td>
+    <td>$1,279,202 vs. $1,018,695</td>
+    <td>+25.57%</td>
+    <td>A+</td>
+    <td>Strong weekly performance highlights key seasonal opportunity and effective promotions.</td>
+    <td>Distinct</td>
+  </tr>
+</table>
+
+Example 2.
+
+<h2>[CLIENT_ID] Weekly Revenue Report</h2>
+
+<Overview>
+Overall, revenue performance is mixed. While there's significant growth compared to the previous two weeks (L2W P2W), there's a concerning decline compared to the previous year (L2W PY and RCW PY). The treeMath_score is 72.59. A key area of concern is the drop in New One-Off revenue and item quantities, which is dragging down overall performance. This analysis focuses primarily on L2W P2W, L2W PY, and RCW PY date fields. The "all" partition represents the total business performance.</Overview>
+
+<Trend_Analysis>
+<ul>
+  <li><b>L2W P2W (Feb 10, 2025 â€“ Feb 24, 2025 vs. Jan 27, 2025 â€“ Feb 09, 2025):</b>
+    <ul>
+      <li><b>Overall:</b> Order revenue for "all" partitions increased by 28.75% (A+), driven by a 31.81% (A+) increase in the number of orders with revenue. This indicates a successful short-term performance boost, possibly from marketing or promotional activities.</li>
+      <li><b>Existing One-Off:</b> Order revenue increased by 34.88% (A+), with a 39.37% (A+) increase in the number of orders. This segment is performing very strongly.</li>
+      <li><b>New One-Off:</b> Order revenue increased by 21.07% (A). This is also performing strong.</li>
+      <li><b>AOV:</b> AOV decreased slightly for all partitions, indicating that the increase in revenue is primarily driven by order volume rather than higher-value orders.
+        <ul>
+          <li>All Partitions: AOV decreased by 2.32% (D+).</li>
+          </ul>
+      </li>
+      <li><b>Item Quantity:</b> Item quantity with revenue increased 20.25% (A), but average items per order declined by 8.77%(D). This suggests promotional strategies are highly effective, but are leading to more orders with lower basket sizes.</li>
+    </ul>
+  </li>
+
+  <li><b>L2W PY (Feb 10, 2025 â€“ Feb 24, 2025 vs. Feb 10, 2024 â€“ Feb 24, 2024):</b>
+    <ul>
+      <li><b>Overall:</b> Order revenue for "all" partitions decreased significantly by -17.85% (D-), with a -26.49% (F) decrease in the number of orders. This is a concerning trend.</li>
+       <li><b>New One-Off:</b> Order revenue decreased significantly by -34.45% (F), with a -41.13% (F) decrease in the number of orders.  This is a major area of concern.</li>
+      <li><b>Existing One-Off:</b> Order revenue remained relatively flat with a very slight increase of 0.31%(C-).
+      <li><b>AOV:</b> AOV increased by 11.76% (B+) for "all" partitions, suggesting that while overall revenue is down, customers are spending more per order than last year. This could be due to fewer discounts or a shift towards higher-priced items, but it's not enough to offset the decline in order volume.</li>
+      <li><b>Item Quantity:</b> Item quantity with revenue declined sharply by -46.06% (F), and average items per order also decreased by -26.62% (F). This suggests that the number of items sold per order is significantly lower than last year, compounding the revenue decline.</li>
+    </ul>
+  </li>
+
+  <li><b>RCW PY (Feb 16, 2025 â€“ Feb 22, 2025 vs. Feb 18, 2024 â€“ Feb 24, 2024):</b>
+    <ul>
+      <li><b>Overall:</b> Order revenue for "all" partitions decreased by -8.80% (D), and the number of orders decreased by -16.15% (D-).</li>
+      <li><b>New One-Off:</b> Order revenue decreased significantly by -25.59% (F), with a -31.06% (F) decrease in the number of orders. This is a significant area of concern.</li>
+      <li><b>Existing One-Off:</b> Order revenue shows some strength with a 7.56% increase (B).</li>
+      <li><b>AOV:</b> AOV increased for all partitions (B), partially offsetting the revenue decline due to lower order volume.</li>
+      <li><b>Item Quantity:</b> Item quantity with revenue decreased significantly by -40.24% (F), and average items per order also decreased by -28.73% (F). This is consistent with the trend seen in the L2W PY data.</li>
+    </ul>
+  </li>
+</ul>
+</Trend_Analysis>
+
+<Key_Questions>
+<ul>
+  <li>What factors contributed to the -34.45% decline in order_revenue for the New One-Off partition in the L2W PY period (Feb 10, 2025 â€“ Feb 24, 2025 vs. Feb 10, 2024 â€“ Feb 24, 2024)? (See Table 7: possible_evaluation_and_key_diagnostic_checks)</li>
+  <li>Why has there been a reduction in item quantity and average items per order across all partitions when comparing L2W PY (Feb 10, 2025 â€“ Feb 24, 2025 vs. Feb 10, 2024 â€“ Feb 24, 2024)? (See Table 7: possible_evaluation_and_key_diagnostic_checks)</li>
+  <li>How can the recent promotional success from L2W P2W be leveraged to improve long-term order value and item quantity, given the negative trend in AOV and average_items_per_order?</li>
+  <li>What is causing the strong performance in Existing One-Off, and how can those learnings be applied to New One-Off?</li>
+</ul>
+</Key_Questions>
+
+<Recommendations>
+<ul>
+  <li><b>Address New One-Off Decline:</b>
+    <ul>
+      <li><b>Action:</b> Investigate the marketing campaigns, landing pages, and offers targeting new one-off customers. Refresh these elements and ensure they are compelling and effective.</li>
+      <li><b>Rationale:</b> The significant decline in New One-Off revenue and orders (L2W PY, RCW PY) suggests issues with acquisition or conversion.</li>
+    </ul>
+  </li>
+  <li><b>Increase Item Quantity and AOV:</b>
+    <ul>
+      <li><b>Action:</b> Implement strategies to increase the average items per order and AOV. This could include bundling, upselling, and cross-selling, as well as optimizing the free shipping threshold.</li>
+      <li><b>Rationale:</b> While order volume is up in L2W P2W, the lower AOV and item quantity suggest that customers are buying less per order.</li>
+    </ul>
+  </li>
+  <li><b>Leverage Existing One-Off Success:</b>
+    <ul>
+      <li><b>Action:</b> Analyze the Existing One-Off segment to understand what is driving its growth, and replicate these strategies for New One-Off acquisition.</li>
+      <li><b>Rationale:</b> Existing One-Off is showing relative strength; understanding why can inform strategies to improve New One-Off performance.</li>
+    </ul>
+  </li>
+  <li><b>Monitor Marketing Spend:</b>
+        <ul>
+          <li><b>Action:</b> Closely monitor marketing spend and ROI. A decrease in marketing spend or ineffective campaigns could be contributing to the decline in new customer acquisition.</li>
+          <li><b>Rationale:</b> Potential causes for decrease in New One-Off include decrease marketing spend</li>
+        </ul>
+    </li>
+</ul>
+</Recommendations>
+
+<Conclusion>
+In summary, [CLIENT_ID] is experiencing strong short-term growth in order volume, but a concerning year-over-year decline in revenue, particularly within the New One-Off segment. The increase in AOV is not sufficient to offset the drop in order numbers and item quantities. Immediate attention should be given to understanding and reversing the decline in New One-Off revenue and optimizing strategies to increase average order value and item quantity.
+Revenue Report Complete. Client ID: [CLIENT_ID]
+</Conclusion>
+
+<Key_Metrics>
+  <table>
+    <thead>
+      <tr>
+        <th>KPI</th>
+        <th>Time Period Type</th>
+        <th>Dates</th>
+        <th>Current Value</th>
+        <th>Comparison Value</th>
+        <th>Percentage Change</th>
+        <th>Grade</th>
+        <th>Interpretation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>order_revenue (all)</td>
+        <td>L2W P2W</td>
+        <td>Feb 10, 2025 â€“ Feb 24, 2025 vs. Jan 27, 2025 â€“ Feb 09, 2025</td>
+        <td>$1,240,143</td>
+        <td>$963,192</td>
+        <td>28.75%</td>
+        <td>A+</td>
+        <td>Significant increase in revenue compared to the previous two weeks, indicating successful recent activities.</td>
+      </tr>
+      <tr>
+        <td>num_orders_with_revenue (all)</td>
+        <td>L2W P2W</td>
+        <td>Feb 10, 2025 â€“ Feb 24, 2025 vs. Jan 27, 2025 â€“ Feb 09, 2025</td>
+        <td>10,468</td>
+        <td>7,942</td>
+        <td>31.81%</td>
+        <td>A+</td>
+        <td>Significant increase in the number of orders, contributing to the revenue growth.</td>
+      </tr>
+      <tr>
+        <td>order_revenue (all)</td>
+        <td>L2W PY</td>
+        <td>Feb 10, 2025 â€“ Feb 24, 2025 vs. Feb 10, 2024 â€“ Feb 24, 2024</td>
+        <td>$1,240,143</td>
+        <td>$1,509,669</td>
+        <td>-17.85%</td>
+        <td>D-</td>
+        <td>Significant decrease in revenue compared to the same period last year, requiring attention.</td>
+      </tr>
+      <tr>
+        <td>num_orders_with_revenue (all)</td>
+        <td>L2W PY</td>
+        <td>Feb 10, 2025 â€“ Feb 24, 2025 vs. Feb 10, 2024 â€“ Feb 24, 2024</td>
+        <td>10,468</td>
+        <td>14,241</td>
+        <td>-26.49%</td>
+        <td>F</td>
+        <td>Significant decrease in the number of orders compared to the same period last year, contributing to the revenue decline.</td>
+      </tr>
+       <tr>
+        <td>order_revenue (New One-Off)</td>
+        <td>L2W PY</td>
+        <td>Feb 10, 2025 â€“ Feb 24, 2025 vs. Feb 10, 2024 â€“ Feb 24, 2024</td>
+        <td>$517,149</td>
+        <td>$788,884</td>
+        <td>-34.45%</td>
+        <td>F</td>
+        <td>New one-off revenue is down significantly over the prior year period, suggesting further action is needed to evaluate marketing spend and relevancy.</td>
+      </tr>
+        <tr>
+        <td>item_quantity_with_revenue (all)</td>
+        <td>RCW PY</td>
+        <td>Feb 16, 2025 â€“ Feb 22, 2025 vs. Feb 18, 2024 â€“ Feb 24, 2024</td>
+        <td>9,871</td>
+        <td>16,518</td>
+        <td>-40.24%</td>
+        <td>F</td>
+        <td>Item Quantity with Revenue decreased significantly, more focus on increasing this should be given.</td>
+      </tr>
+      <tr>
+        <td>aov (all)</td>
+        <td>L2W PY</td>
+        <td>Feb 10, 2025 â€“ Feb 24, 2025 vs. Feb 10, 2024 â€“ Feb 24, 2024</td>
+        <td>$118.47</td>
+        <td>$106.01</td>
+        <td>11.76%</td>
+        <td>B+</td>
+        <td>AOV is up which could be driving order revenue up.</td>
+      </tr>
+    </tbody>
+  </table>
+</Key_Metrics>
+
+</examples>
+
+
 <context>
 
   2. **Table 2: Variable Rankings**

@@ -105,6 +105,424 @@
     - End with the final statement: "Subscription Report Complete. Client ID: [CLIENT_ID]"
   </Summary>
 </instructions>
+<examples>
+Example 1
+
+<h2>Overview</h2>
+<ul>
+  <li>The current subscription health has a treeMath_score of 90.46. Key highlights include strong year-over-year growth in active subscribers, new subscribers and total revenue. However, high cancellation variance requires strategic attention.</li>
+  <li>Analyzing L2W P2W, L2W PY, and RCW PY performance for the "all" partition. Date-Cal-Data Confirmed.</li>
+</ul>
+
+<h2>Trend Analysis</h2>
+<ul>
+  <li><b>L2W P2W:</b>
+    <ul>
+      <li><b>Active Subscribers:</b> Increased by 4.00% from Jan 27, 2025 - Feb 09, 2025 to Feb 10, 2025 - Feb 24, 2025, indicating subscriber base growth.</li>
+      <li><b>New Subscribers:</b> Increased by 40.00% from Jan 27, 2025 - Feb 09, 2025 to Feb 10, 2025 - Feb 24, 2025.</li>
+      <li><b>Total Revenue:</b> Increased by 13.00% from Jan 27, 2025 - Feb 09, 2025 to Feb 10, 2025 - Feb 24, 2025.</li>
+      <li><b>New Subscriber Revenue:</b> Increased by 40.00% from Jan 27, 2025 - Feb 09, 2025 to Feb 10, 2025 - Feb 24, 2025.</li>
+      <li><b>Cancellation Variance:</b> Increased by 31.00% from Jan 27, 2025 - Feb 09, 2025 to Feb 10, 2025 - Feb 24, 2025, meaning actual cancellations exceed expected cancellations. This may signal that prediction models are underestimating churn (Table 7).</li>
+    </ul>
+  </li>
+  <li><b>L2W PY:</b>
+    <ul>
+      <li><b>Active Subscribers:</b> Increased by 78.00% from Feb 10, 2024 - Feb 24, 2024 to Feb 10, 2025 - Feb 24, 2025, indicating substantial growth in the subscriber base.</li>
+      <li><b>New Subscribers:</b> Increased by 18.00% from Feb 10, 2024 - Feb 24, 2024 to Feb 10, 2025 - Feb 24, 2025.</li>
+      <li><b>Total Revenue:</b> Increased by 46.00% from Feb 10, 2024 - Feb 24, 2024 to Feb 10, 2025 - Feb 24, 2025, reflecting strong overall financial performance.</li>
+      <li><b>New Subscriber Revenue:</b> Increased by 21.00% from Feb 10, 2024 - Feb 24, 2024 to Feb 10, 2025 - Feb 24, 2025.</li>
+      <li><b>Existing Subscribers Charges:</b> Increased by 53.00% from Feb 10, 2024 - Feb 24, 2024 to Feb 10, 2025 - Feb 24, 2025, illustrating the ability to maintain ongoing relationships.</li>
+      <li><b>Existing Subscriber Revenue:</b> Increased by 54.00% from Feb 10, 2024 - Feb 24, 2024 to Feb 10, 2025 - Feb 24, 2025, highlighting successful retention and monetization of existing subscribers.</li>
+      <li><b>Churn Rate:</b> Decreased by 81.00% from Feb 10, 2024 - Feb 24, 2024 to Feb 10, 2025 - Feb 24, 2025, showcasing improved customer retention.</li>
+      <li><b>Cancellation Variance:</b> Increased significantly with a change of $22.02 from Feb 10, 2024 - Feb 24, 2024 to Feb 10, 2025 - Feb 24, 2025, meaning actual cancellations exceed expected cancellations. This may signal that prediction models are underestimating churn (Table 7).</li>
+      <li><b>New Subs Charges:</b> Increased by 18.00% from Feb 10, 2024 - Feb 24, 2024 to Feb 10, 2025 - Feb 24, 2025.</li>
+    </ul>
+  </li>
+   <li><b>RCW PY:</b>
+    <ul>
+      <li><b>Active Subscribers:</b> Increased by 77.00% from Feb 18, 2024 - Feb 24, 2024 to Feb 16, 2025 - Feb 22, 2025, indicating substantial growth in the subscriber base.</li>
+      <li><b>New Subscribers:</b> Increased by 40.00% from Feb 18, 2024 - Feb 24, 2024 to Feb 16, 2025 - Feb 22, 2025.</li>
+      <li><b>Total Revenue:</b> Increased by 47.00% from Feb 18, 2024 - Feb 24, 2024 to Feb 16, 2025 - Feb 22, 2025, reflecting strong overall financial performance.</li>
+      <li><b>New Subscriber Revenue:</b> Increased by 40.00% from Feb 18, 2024 - Feb 24, 2024 to Feb 16, 2025 - Feb 22, 2025.</li>
+      <li><b>Existing Subscribers Charges:</b> Increased by 47.00% from Feb 18, 2024 - Feb 24, 2024 to Feb 16, 2025 - Feb 22, 2025, illustrating the ability to maintain ongoing relationships.</li>
+      <li><b>Existing Subscriber Revenue:</b> Increased by 49.00% from Feb 18, 2024 - Feb 24, 2024 to Feb 16, 2025 - Feb 22, 2025, highlighting successful retention and monetization of existing subscribers.</li>
+      <li><b>Churn Rate:</b> Decreased by 85.00% from Feb 18, 2024 - Feb 24, 2024 to Feb 16, 2025 - Feb 22, 2025, showcasing improved customer retention.</li>
+      <li><b>Cancellation Variance:</b> Increased significantly with a change of $14.83 from Feb 18, 2024 - Feb 24, 2024 to Feb 16, 2025 - Feb 22, 2025, meaning actual cancellations exceed expected cancellations. This may signal that prediction models are underestimating churn (Table 7).</li>
+      <li><b>New Subs Charges:</b> Increased by 40.00% from Feb 18, 2024 - Feb 24, 2024 to Feb 16, 2025 - Feb 22, 2025.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>Key Questions</h2>
+<ul>
+  <li>What steps can be taken to address the increase in cancellation_variance in the L2W P2W period (Feb 10, 2025 - Feb 24, 2025 vs. Jan 27, 2025 - Feb 09, 2025) to align actual cancellations with predicted values, and are the churn prediction models accurate (Table 7)?</li>
+</ul>
+
+<h2>Recommendations</h2>
+<ul>
+  <li><b>Reduce Cancellation Variance (L2W P2W):</b>
+    <ul>
+      <li>Refine churn prediction models using more accurate data and regularly update them.</li>
+      <li>Address any newly identified factors causing increased cancellations through targeted retention efforts.</li>
+      <li>Implement proactive retention measures such as personalized offers or improved customer support.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>Conclusion</h2>
+<ul>
+  <li>The subscription service shows strong year-over-year growth in active subscribers and revenue, indicating successful long-term expansion. However, there is a high cancellation variance. Focus should be placed on refining churn prediction models to enhance overall business performance.</li>
+  <li>Key metrics needing attention are cancellation_variance.</li>
+  <li>Subscription Report Complete. Client ID: [CLIENT_ID]</li>
+</ul>
+
+<h2>Key Metrics</h2>
+<ul>
+  <li><b>Active Subscribers</b>
+    <ul>
+      <li>Time Period Type: L2W PY</li>
+      <li>Date Range: Feb 10, 2025 - Feb 24, 2025</li>
+      <li>Current Value: 45,511 vs. Comparison Value: 25,629</li>
+      <li>Percentage Change: 78.00%</li>
+      <li>Letter Grade: A+</li>
+      <li>Interpretation: Significant growth in the total number of active subscribers compared to the previous year.</li>
+    </ul>
+  </li>
+  <li><b>New Subscribers</b>
+    <ul>
+      <li>Time Period Type: L2W PY</li>
+      <li>Date Range: Feb 10, 2025 - Feb 24, 2025</li>
+      <li>Current Value: 1,489 vs. Comparison Value: 1,262</li>
+      <li>Percentage Change: 18.00%</li>
+      <li>Letter Grade: A-</li>
+      <li>Interpretation: Growth in the total number of new subscribers compared to the previous year.</li>
+    </ul>
+  </li>
+  <li><b>Existing Subscribers Charges</b>
+    <ul>
+      <li>Time Period Type: L2W PY</li>
+      <li>Date Range: Feb 10, 2025 - Feb 24, 2025</li>
+      <li>Current Value: $5,784 vs. Comparison Value: $3,779</li>
+      <li>Percentage Change: 53.00%</li>
+      <li>Letter Grade: A+</li>
+      <li>Interpretation: Significant growth in existing subscribers charges compared to the previous year.</li>
+    </ul>
+  </li>
+   <li><b>Total Revenue</b>
+    <ul>
+      <li>Time Period Type: L2W PY</li>
+      <li>Date Range: Feb 10, 2025 - Feb 24, 2025</li>
+      <li>Current Value: $841,103 vs. Comparison Value: $577,309</li>
+      <li>Percentage Change: 46.00%</li>
+      <li>Letter Grade: A+</li>
+      <li>Interpretation: Substantial increase in total revenue compared to the previous year.</li>
+    </ul>
+  </li>
+  <li><b>New Subscriber Revenue</b>
+    <ul>
+      <li>Time Period Type: L2W PY</li>
+      <li>Date Range: Feb 10, 2025 - Feb 24, 2025</li>
+      <li>Current Value: $181,404 vs. Comparison Value: $150,454</li>
+      <li>Percentage Change: 21.00%</li>
+      <li>Letter Grade: A</li>
+      <li>Interpretation: Significant increase in new subscriber revenue compared to the previous year.</li>
+    </ul>
+  </li>
+  <li><b>Existing Subscriber Revenue</b>
+    <ul>
+      <li>Time Period Type: L2W PY</li>
+      <li>Date Range: Feb 10, 2025 - Feb 24, 2025</li>
+      <li>Current Value: $575,985 vs. Comparison Value: $373,609</li>
+      <li>Percentage Change: 54.00%</li>
+      <li>Letter Grade: A+</li>
+      <li>Interpretation: Significant increase in existing subscriber revenue compared to the previous year.</li>
+    </ul>
+  </li>
+  <li><b>Churn Rate</b>
+    <ul>
+      <li>Time Period Type: L2W PY</li>
+      <li>Date Range: Feb 10, 2025 - Feb 24, 2025</li>
+      <li>Current Value: 5.00% vs. Comparison Value: 24.00%</li>
+      <li>Percentage Change: -81.00%</li>
+      <li>Letter Grade: F</li>
+      <li>Interpretation: Significant decrease in churn rate compared to the previous year.</li>
+    </ul>
+  </li>
+  <li><b>New Subs Charges</b>
+    <ul>
+      <li>Time Period Type: L2W PY</li>
+      <li>Date Range: Feb 10, 2025 - Feb 24, 2025</li>
+      <li>Current Value: 1,489 vs. Comparison Value: 1,262</li>
+      <li>Percentage Change: 18.00%</li>
+      <li>Letter Grade: A-</li>
+      <li>Interpretation: Growth in the total number of new subs charges compared to the previous year.</li>
+    </ul>
+  </li>
+    <li><b>Active Subscribers</b>
+    <ul>
+      <li>Time Period Type: RCW PY</li>
+      <li>Date Range: Feb 16, 2025 - Feb 22, 2025</li>
+      <li>Current Value: 45,260 vs. Comparison Value: 25,629</li>
+      <li>Percentage Change: 77.00%</li>
+      <li>Letter Grade: A+</li>
+      <li>Interpretation: Significant growth in the total number of active subscribers compared to the previous year.</li>
+    </ul>
+  </li>
+  <li><b>New Subscribers</b>
+    <ul>
+      <li>Time Period Type: RCW PY</li>
+      <li>Date Range: Feb 16, 2025 - Feb 22, 2025</li>
+      <li>Current Value: 821.00 vs. Comparison Value: 585.00</li>
+      <li>Percentage Change: 40.00%</li>
+      <li>Letter Grade: A+</li>
+      <li>Interpretation: Growth in the total number of new subscribers compared to the previous year.</li>
+    </ul>
+  </li>
+  <li><b>Existing Subscribers Charges</b>
+    <ul>
+      <li>Time Period Type: RCW PY</li>
+      <li>Date Range: Feb 16, 2025 - Feb 22, 2025</li>
+      <li>Current Value: $2,660 vs. Comparison Value: $1,815</li>
+      <li>Percentage Change: 47.00%</li>
+      <li>Letter Grade: A+</li>
+      <li>Interpretation: Significant growth in existing subscribers charges compared to the previous year.</li>
+    </ul>
+  </li>
+   <li><b>Total Revenue</b>
+    <ul>
+      <li>Time Period Type: RCW PY</li>
+      <li>Date Range: Feb 16, 2025 - Feb 22, 2025</li>
+      <li>Current Value: $408,803 vs. Comparison Value: $278,154</li>
+      <li>Percentage Change: 47.00%</li>
+      <li>Letter Grade: A+</li>
+      <li>Interpretation: Substantial increase in total revenue compared to the previous year.</li>
+    </ul>
+  </li>
+  <li><b>New Subscriber Revenue</b>
+    <ul>
+      <li>Time Period Type: RCW PY</li>
+      <li>Date Range: Feb 16, 2025 - Feb 22, 2025</li>
+      <li>Current Value: $101,474 vs. Comparison Value: $72,235</li>
+      <li>Percentage Change: 40.00%</li>
+      <li>Letter Grade: A+</li>
+      <li>Interpretation: Significant increase in new subscriber revenue compared to the previous year.</li>
+    </ul>
+  </li>
+  <li><b>Existing Subscriber Revenue</b>
+    <ul>
+      <li>Time Period Type: RCW PY</li>
+      <li>Date Range: Feb 16, 2025 - Feb 22, 2025</li>
+      <li>Current Value: $267,864 vs. Comparison Value: $180,093</li>
+      <li>Percentage Change: 49.00%</li>
+      <li>Letter Grade: A+</li>
+      <li>Interpretation: Significant increase in existing subscriber revenue compared to the previous year.</li>
+    </ul>
+  </li>
+  <li><b>Churn Rate</b>
+    <ul>
+      <li>Time Period Type: RCW PY</li>
+      <li>Date Range: Feb 16, 2025 - Feb 22, 2025</li>
+      <li>Current Value: 3.00% vs. Comparison Value: 23.00%</li>
+      <li>Percentage Change: -85.00%</li>
+      <li>Letter Grade: F</li>
+      <li>Interpretation: Significant decrease in churn rate compared to the previous year.</li>
+    </ul>
+  </li>
+  <li><b>New Subs Charges</b>
+    <ul>
+      <li>Time Period Type: RCW PY</li>
+      <li>Date Range: Feb 16, 2025 - Feb 22, 2025</li>
+      <li>Current Value: 821.00 vs. Comparison Value: 585.00</li>
+      <li>Percentage Change: 40.00%</li>
+      <li>Letter Grade: A+</li>
+      <li>Interpretation: Growth in the total number of new subs charges compared to the previous year.</li>
+    </ul>
+  </li>
+  <li><b>Cancellation Variance</b>
+    <ul>
+      <li>Time Period Type: L2W P2W</li>
+      <li>Date Range: Feb 10, 2025 - Feb 24, 2025</li>
+      <li>Current Value: -143,496.00% vs. Comparison Value: -109,432.00%</li>
+      <li>Percentage Change: 31.00%</li>
+      <li>Letter Grade: F</li>
+      <li>Interpretation: Significant increase in cancellation variance, indicating that actual cancellations are exceeding expected cancellations.</li>
+    </ul>
+  </li>
+</ul>
+Subscription Report Complete. Client ID: [CLIENT_ID]
+
+Example 2.
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Subscription Performance Analysis</title>
+</head>
+<body>
+
+  <h1>Subscription Performance Analysis</h1>
+
+  <section id="overview">
+    <h2>(a) Overview</h2>
+    <p>
+      The current subscription health reflects a mixed performance, with a treeMath_score of 84.78.  Strong active subscriber growth is offset by declines in key revenue metrics and new subscriber acquisition in the more recent periods, requiring focused attention. Analyzing L2W P2W, L2W PY, and RCW PY performance reveals critical trends in subscriber behavior and revenue generation. Date-Cal-Data Confirmed.
+    </p>
+  </section>
+
+  <section id="trend_analysis">
+    <h2>(b) Trend Analysis</h2>
+    <ul>
+      <li>
+        <b>L2W P2W: Feb 10, 2025 â€“ Feb 24, 2025 vs. Jan 27, 2025 â€“ Feb 09, 2025</b>
+        <ul>
+          <li>
+            <b>Total Revenue</b> declined by 19%, falling from $286,016 to $231,612. This significant decrease impacts profitability and overall financial health.  Hypothesized causes (Table 7) include ineffective upselling or cross-selling efforts and a decline in product value perception.
+          </li>
+          <li>
+            <b>Existing Subscribers Charges</b> decreased by 22%, from $11,267 to $8,792. This decline suggests reduced engagement or satisfaction among existing subscribers, potentially leading to higher churn.  Possible causes include price reductions or a shift to lower-priced subscription tiers.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <b>L2W PY: Feb 10, 2025 â€“ Feb 24, 2025 vs. Feb 10, 2024 â€“ Feb 24, 2024</b>
+        <ul>
+          <li>
+            <b>New Subscribers</b> decreased by 13%, from 1,439 to 1,249.  This reduction indicates potential issues with customer acquisition strategies.  Possible causes include ineffective acquisition campaigns or less attractive subscription offers.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <b>RCW PY: Feb 16, 2025 â€“ Feb 22, 2025 vs. Feb 18, 2024 â€“ Feb 24, 2024</b>
+        <ul>
+          <li>
+            <b>Total Revenue</b> plummeted by 84%, from $171,070 to $27,099. This dramatic decrease severely impacts financial stability and requires immediate investigation. Potential causes (Table 7) include a sharp increase in churn among high-value subscribers or a significant drop in ARPU.
+          </li>
+          <li>
+            <b>Existing Subscribers Charges</b> saw a major decline of 92%, falling from $6,695 to $533. This signals a critical issue with existing subscriber engagement and revenue generation, possibly due to ineffective upselling or declining subscriber satisfaction.
+          </li>
+          <li>
+            <b>Existing Subscriber Revenue</b> also decreased by 92%, from $157,415 to $12,345. This large decline mirrors the decrease in existing subscriber charges and underscores the need to address retention and engagement strategies.
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section id="key_questions">
+    <h2>(c) Key Questions</h2>
+    <ul>
+      <li>What factors contributed to the 19% drop in total revenue during the L2W P2W period, and what immediate actions can mitigate further losses? (Reference Table 7's "possible_evaluation_and_key_diagnostic_checks.")</li>
+      <li>Why did existing subscribers charges decrease by 22% in the L2W P2W timeframe, and how can subscriber engagement be improved to reverse this trend? (Reference Table 7's "possible_evaluation_and_key_diagnostic_checks.")</li>
+      <li>What specific acquisition strategies are underperforming, leading to a 13% decrease in new subscribers during the L2W PY period? (Reference Table 7's "possible_evaluation_and_key_diagnostic_checks.")</li>
+      <li>What caused the precipitous 84% drop in total revenue during the RCW PY period, and what are the primary drivers behind the massive decrease in existing subscriber charges and revenue? (Reference Table 7's "possible_evaluation_and_key_diagnostic_checks.")</li>
+    </ul>
+  </section>
+
+  <section id="recommendations">
+    <h2>(d) Recommendations</h2>
+    <ul>
+      <li>
+        <b>Total Revenue Decline (L2W P2W & RCW PY):</b>
+        <ul>
+          <li>Immediately reassess pricing and promotional strategies to boost ARPU and overall revenue.</li>
+          <li>Implement targeted marketing campaigns to re-engage existing subscribers and incentivize higher spending.</li>
+          <li>Investigate and address any technical issues or service disruptions that may be impacting subscriber satisfaction and spending (Immediate fix).</li>
+        </ul>
+      </li>
+      <li>
+        <b>Existing Subscriber Charges Decrease (L2W P2W & RCW PY):</b>
+        <ul>
+          <li>Enhance customer success initiatives to proactively address subscriber concerns and improve satisfaction (Short-term).</li>
+          <li>Introduce personalized offers and incentives to encourage existing subscribers to increase spending (Short-term).</li>
+          <li>Develop a comprehensive retention program focusing on high-value subscribers to minimize churn (Medium-to-long-term).</li>
+        </ul>
+      </li>
+      <li>
+        <b>New Subscribers Decrease (L2W PY):</b>
+        <ul>
+          <li>Revamp acquisition strategies by exploring new channels and tactics to attract a broader audience (Short-term).</li>
+          <li>Enhance subscription offers with added value or incentives to improve attractiveness (Short-term).</li>
+          <li>Refine targeting strategies to focus on high-potential subscriber segments (Medium-to-long-term).</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section id="conclusion">
+    <h2>(e) Conclusion</h2>
+    <p>
+      Overall, the subscription service shows strength in active subscriber counts and new subscriber acquisition in certain periods, but struggles with revenue generation and retention require focused attention. The significant declines in total revenue and existing subscriber charges, particularly in the recent week, indicate urgent issues that must be addressed. Prioritizing subscriber engagement and acquisition improvements is critical.
+    </p>
+    <p>
+      Subscription Report Complete. Client ID: [CLIENT_ID]
+    </p>
+  </section>
+
+  <section id="key_metrics">
+    <h2>(f) Key Metrics</h2>
+    <ul>
+      <li>
+        <b>Total Revenue</b>
+        <ol>
+          <li>Time Period Type: L2W P2W</li>
+          <li>Date Range: Feb 10, 2025 â€“ Feb 24, 2025</li>
+          <li>Current vs. Comparison Values: $231,612 vs. $286,016</li>
+          <li>Percentage Change: -19%</li>
+          <li>Letter Grade: F</li>
+          <li>Interpretation: Significant revenue decline indicating potential issues with subscriber engagement or value perception.</li>
+        </ol>
+      </li>
+      <li>
+        <b>Existing Subscribers Charges</b>
+        <ol>
+          <li>Time Period Type: L2W P2W</li>
+          <li>Date Range: Feb 10, 2025 â€“ Feb 24, 2025</li>
+          <li>Current vs. Comparison Values: $8,792 vs. $11,267</li>
+          <li>Percentage Change: -22%</li>
+          <li>Letter Grade: F</li>
+          <li>Interpretation: Notable decrease in charges from existing subscribers, suggesting declining satisfaction or reduced engagement.</li>
+        </ol>
+      </li>
+      <li>
+        <b>New Subscribers</b>
+        <ol>
+          <li>Time Period Type: L2W PY</li>
+          <li>Date Range: Feb 10, 2025 â€“ Feb 24, 2025</li>
+          <li>Current vs. Comparison Values: 1,249 vs. 1,439</li>
+          <li>Percentage Change: -13%</li>
+          <li>Letter Grade: B+</li>
+          <li>Interpretation: Reduction in new subscribers, signaling potential issues with acquisition strategies.</li>
+        </ol>
+      </li>
+       <li>
+        <b>Total Revenue</b>
+        <ol>
+          <li>Time Period Type: RCW PY</li>
+          <li>Date Range: Feb 16, 2025 â€“ Feb 22, 2025</li>
+          <li>Current vs. Comparison Values: $27,099 vs. $171,070</li>
+          <li>Percentage Change: -84%</li>
+          <li>Letter Grade: F</li>
+          <li>Interpretation: Alarming revenue decline indicating major issues with subscriber retention or revenue generation.</li>
+        </ol>
+      </li>
+       <li>
+        <b>Existing Subscribers Charges</b>
+        <ol>
+          <li>Time Period Type: RCW PY</li>
+          <li>Date Range: Feb 16, 2025 â€“ Feb 22, 2025</li>
+          <li>Current vs. Comparison Values: $533 vs. $6,695</li>
+          <li>Percentage Change: -92%</li>
+          <li>Letter Grade: F</li>
+          <li>Interpretation: Severe drop in charges from existing subscribers, indicating critical problems with engagement or satisfaction.</li>
+        </ol>
+      </li>
+    </ul>
+  </section>
+
+</body>
+</html>
+
+</examples>
 
 
 <context>
