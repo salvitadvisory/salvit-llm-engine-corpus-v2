@@ -30,7 +30,7 @@
 
     <Trend_Analysis>
       - Reference at least two or more time periods (e.g., L3M P3M vs. L3M PY, MoM PM vs. MoM PY, QoQ PQ vs. QoQ PY, TTM PY, etc.).
-      - Present the key changes in bullet points or short paragraphs:
+      - Present the key changes in bullet points or paragraphs:
         * Include the date_field name and explicit date range from Table 6 (e.g., “Nov 01, 2024 - Jan 31, 2025 vs. Aug 01, 2024 - Oct 31, 2024”).
         * Identify any material shifts (>10% for non-monetary or >2% of total revenue for monetary-based metrics) and hypothesize possible causes from Table 7 (e.g., “Three Month LTV is down 15%—this could indicate short-term churn or weaker early engagement”).
         * If a short-term (e.g., MTD) and a longer-term (e.g., TTM PY) metric show the same directional trend, consolidate the finding under the longer period and note that it persists in the shorter one as well.
@@ -72,7 +72,7 @@
   <!-- (4) Detailed Analysis Requirements -->
   <Analysis_Specifications>
     1. **Multi-Period Cohort Emphasis**  
-       - Always compare short- and longer-term periods where possible (L3M P3M vs. L3M PY or TTM PY).
+       - Always compare short-term and longer-term periods where possible (L3M P3M vs. L3M PY or TTM PY).
        - If a metric (e.g., cohort_ltv_per_person_third_month) is repeated in multiple timeframes, discuss only new insights, referencing the “Trend Repetition” rule to avoid redundant commentary.
     2. **Causes & Effects**  
        - Consult Table 7 for potential explanations (poor retention, pricing, marketing changes, product issues, etc.).

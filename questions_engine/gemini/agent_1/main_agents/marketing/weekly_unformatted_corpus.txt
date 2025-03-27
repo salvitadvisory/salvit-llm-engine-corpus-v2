@@ -1,0 +1,438 @@
+<instructions>
+  <!-- Role & Objective -->
+  <Role>
+    You are the world's leading expert on e-commerce performance analysis, tasked with delivering an actionable, multi-period marketing report.
+  </Role>
+
+  <Objective>
+    1. Analyze all provided key metrics across multiple time periods (e.g., MTD PM, MTD PY, RCW PY, L2W PY).
+    2. Provide an insight-driven explanation (the “why”) behind the changes, referencing potential causes from Table 7.
+    3. Analyze any changes in spend mix alongside traditional performance metrics, and explain how shifts in channel allocations might affect overall marketing efficiency.
+  </Objective>
+
+  <!-- Output Requirements -->
+  <Output_Requirements>
+    1. **Report Structure**:
+       a) Overview  
+       b) Trend Analysis 
+       c) Spend Mix Analysis – Clearly discuss any shifts in spend mix (e.g., spend_mix_Facebook, spend_mix_Non Brand Search, etc.) and their implications  
+       d) Key Questions  
+       e) Recommendations  
+       f) Conclusion (end with: "Marketing Report Complete. Client ID: [CLIENT_ID]")
+    2. **Time Period References**:
+       - Always specify the date_field name (e.g., MTD PM) AND the explicit date range (from Table 6).
+       - Label the current vs. comparison period distinctly (e.g., “Feb 01, 2025 - Feb 19, 2025 vs. Jan 01, 2025 - Jan 19, 2025”).
+       - Use abbreviated months (e.g., Feb, 2025) and only utilize the date ranges provided.
+    3. **Data Usage**:
+       - Rely exclusively on the given dataset values and changes.
+       - If a metric is repeated across multiple periods, focus on unique insights each period provides without duplicating the same explanation.
+       - Flag material shifts (>10% absolute or >20% relative) and hypothesize potential causes from Table 7.
+    4. **KPI Reporting**:
+       - Maximum 7 KPIs in-depth. For each:
+         * Indicate the relevant time period(s) (e.g., L2W P2W)
+         * Show current vs. comparison values, percentage change, and letter grade
+         * Provide a concise interpretation with references to likely causes or influences (e.g., seasonality, new campaigns)
+    5. **Analysis Style**:
+       - Provide cause-and-effect reasoning for each significant trend.
+       - Cross-reference Table 7's "Insights on Analyzing Anomalies" to strengthen analysis.
+       - Include an analysis of spend mix changes and explain how shifts in channel allocations (e.g., increased Facebook spend or reduced Non Brand Search spend) affect overall performance.
+       - Connect your findings to real business implications (spend, profit, brand, or product issues).
+    6. **Conclusion**:
+       - At least three sentences summarizing major wins, concerns, and next steps.
+       - End with the required statement: "Marketing Report Complete. Client ID: [CLIENT_ID]"
+  
+  <General_Rule>
+    Follow these instructions precisely, referencing multiple time periods and incorporating spend mix analysis for a deeper understanding. Offer concise, data-driven insights without extraneous narrative.
+  </General_Rule>
+</instructions>
+
+<examples>
+Example 1. 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Marketing Report</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; }
+    hr { border: 0; border-top: 1px solid #ccc; margin: 20px 0; }
+    h1, h2, h3 { margin-top: 20px; }
+    ul { margin-left: 20px; }
+  </style>
+</head>
+<body>
+
+  <ul>
+    <li><strong>L2W P2W</strong> (Feb 10, 2025 – Feb 24, 2025 vs. Jan 27, 2025 – Feb 09, 2025)</li>
+    <li><strong>L2W PY</strong> (Feb 10, 2025 – Feb 24, 2025 vs. Feb 10, 2024 – Feb 24, 2024)</li>
+    <li><strong>RCW PY</strong> (Feb 16, 2025 – Feb 22, 2025 vs. Feb 18, 2024 – Feb 24, 2024)</li>
+  </ul>
+
+  <hr>
+
+  <h2>1. OVERVIEW</h2>
+  <p>
+    Our analysis shows a mixed picture over the most recent two-week (L2W) and recent comparison week (RCW PY) periods. While key efficiency metrics such as the Marketing Efficiency Ratio (MER) and Return on Ad Spend (ROAS) display improvements, the cost per acquisition (CPA) continues to climb. Additionally, shifts in spend mix – especially with increased allocation to Applovin versus a reduced share for Facebook in the year-over-year period – are likely influencing the underlying cost dynamics. Overall, these trends suggest targeted adjustments in channel strategies could help reinforce efficiency gains while curbing rising costs.
+  </p>
+
+  <hr>
+
+  <h2>2. TREND ANALYSIS</h2>
+  
+  <h3>A. L2W P2W (Feb 10 – Feb 24, 2025 vs. Jan 27 – Feb 09, 2025):</h3>
+  <ul>
+    <li><strong>MER</strong> rose from 1.44 to 1.60 (+11%). This improvement indicates better revenue generation relative to spend.</li>
+    <li><strong>CPA</strong> fell from $100.56 to $95.39 (-5%), a positive trend although the absolute cost remains on the higher side.</li>
+    <li><strong>ROAS</strong> increased from 0.73 to 0.80 (+9%), suggesting that every marketing dollar is yielding more revenue.</li>
+    <li>However, <strong>CPM</strong> jumped dramatically by 48% and <strong>CPC</strong> increased by 10%, signaling rising costs per impression and click that could eventually pressure acquisition expenses if not addressed.</li>
+    <li>Marketing spend was slightly lower (-2%), keeping budget allocations relatively constant in the period examined.</li>
+  </ul>
+
+  <h3>B. L2W PY (Feb 10 – Feb 24, 2025 vs. Feb 10 – Feb 24, 2024):</h3>
+  <ul>
+    <li><strong>MER</strong> improved by 10% (from 1.46 to 1.60), mirroring the recent two-week improvement.</li>
+    <li><strong>CPA</strong> increased sharply from $83.54 to $95.39 (+14%). While efficiency ratios are better, the rising CPA demands attention.</li>
+    <li><strong>ROAS</strong> improved modestly by 5% (0.76 to 0.80).</li>
+    <li>Notably, <strong>CPM</strong> declined by 20% (from $0.03 to $0.02), which is a favorable sign, though <strong>CPC</strong> rose by 4%.</li>
+    <li>Marketing spend saw a 7% increase, possibly reflecting a broader investment in campaigns that now distribute across multiple channels.</li>
+  </ul>
+
+  <h3>C. RCW PY (Feb 16 – Feb 22, 2025 vs. Feb 18 – Feb 24, 2024):</h3>
+  <ul>
+    <li><strong>MER</strong> shows the strongest improvement—a 14% increase (from 1.45 to 1.66), suggesting that the most recent weekly campaigns are more revenue-efficient relative to spend.</li>
+    <li><strong>CPA</strong> increased by 11% (from $83.52 to $92.76).</li>
+    <li><strong>ROAS</strong> improved by 9% (from 0.76 to 0.83), aligning with overall positive revenue-generation trends.</li>
+    <li><strong>CPM</strong> dropped by 15% (from $0.03 to $0.02), reducing the cost of exposures, while <strong>CPC</strong> ticked up by 5%.</li>
+    <li>Marketing spend in this short RCW period increased by 10%, which may partly explain the higher CPA even as efficiency ratios (MER and ROAS) improve.</li>
+  </ul>
+
+  <hr>
+
+  <h2>3. SPEND MIX ANALYSIS</h2>
+  <p>
+    Looking at spend mix trends in the year-over-year context (applicable to L2W PY and RCW PY since weekly spend mix data is available primarily for these longer comparison periods):
+  </p>
+  <ul>
+    <li>Applovin allocation moved from 0.00% in the comparison period to 10.00% in the current period. This significant channel introduction (or ramp-up) implies that additional budget is being allocated outside of traditional platforms.</li>
+    <li>Simultaneously, Facebook's share declined from 88–87% in the past year to 72–71% recently (an absolute drop of roughly 16–18%).</li>
+  </ul>
+  <p>
+    The shift from a dominant allocation toward Facebook to a new weighting toward Applovin marks a strategic realignment. While the lower CPMs in RCW PY and L2W PY indicate cost savings on impressions, the increased CPA across all periods might reflect that the new channel mix is still in its optimization phase or that the creative and targeting strategies on these new channels require further fine-tuning. In turn, this could affect overall campaign efficiency if not carefully managed.
+  </p>
+
+  <hr>
+
+  <h2>4. KEY QUESTIONS</h2>
+  <ul>
+    <li>What factors are driving the rising CPA even as MER and ROAS improve? Is higher competition on certain platforms or suboptimal conversion funnel performance contributing?</li>
+    <li>How is the new allocation to Applovin performing compared with historical Facebook spend? Are the lower impression costs translating into efficient customer acquisitions?</li>
+    <li>Given the jump in CPM and CPC in L2W P2W, are there recent changes in audience targeting or bidding strategies that might be inadvertently driving up user acquisition costs?</li>
+    <li>Is the near-zero conversion rate (CVR at 0.00%) a data reporting anomaly or an indication of issues at the landing page/checkout stages?</li>
+  </ul>
+
+  <hr>
+
+  <h2>5. RECOMMENDATIONS</h2>
+  <ul>
+    <li>Review channel-level performance metrics for Applovin versus Facebook to validate whether the reallocation is sustainable. Consider deeper A/B testing on creative assets and audience segments on both channels.</li>
+    <li>Investigate the rising CPC and CPM metrics in L2W P2W. Adjust bidding strategies and refine audience targeting to mitigate these cost increases.</li>
+    <li>Since CPA trends are upward, perform a granular analysis of the conversion funnel to identify if a disconnect exists between clicks/impressions and actual conversions.</li>
+    <li>Confirm the accuracy of conversion data (CVR at 0.00%) by cross-referencing web analytics and sales data; address any tracking issues immediately.</li>
+    <li>Reevaluate the overall spend mix periodically and correlate shifts with performance changes to ensure that budget reallocation (e.g., increased spend on Applovin) effectively optimizes overall marketing efficiency.</li>
+  </ul>
+
+  <hr>
+
+  <h2>6. CONCLUSION</h2>
+  <p>
+    The recent weekly trends show promising gains in marketing efficiency as indicated by improvements in MER and ROAS across both L2W P2W and RCW PY—but these are counterbalanced by rising CPA levels and inconsistent cost-per-click and cost-per-impression metrics. The significant shift in spend mix, especially the introduction of Applovin and reduction in Facebook allocation, suggests a strategic pivot that may offer long-term benefits once further optimized. Immediate next steps include conducting detailed funnel analytics and channel-specific performance reviews, as well as verifying data integrity on conversion metrics to drive further improvements in overall marketing health.
+  </p>
+
+  <p><em>Marketing Report Complete. Client ID:[CLIENT_ID] </em></p>
+
+</body>
+</html>
+
+Example 2.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Marketing Report - [CLIENT_ID]</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; }
+    h1, h2, h3 { margin-top: 20px; }
+    ul, ol { margin-left: 20px; }
+    hr { border: 0; border-top: 1px solid #ccc; margin: 20px 0; }
+  </style>
+</head>
+<body>
+
+  <h1>Marketing Report</h1>
+
+  <h2>Overview</h2>
+  <p>
+    This report analyzes the marketing performance of <strong>[CLIENT_ID]</strong>, focusing on recent trends and shifts in key performance indicators (KPIs). The analysis covers multiple time periods, with emphasis on L2W P2W (Feb 10, 2025 - Feb 24, 2025 vs. Jan 27, 2025 - Feb 09, 2025), L2W PY (Feb 10, 2025 - Feb 24, 2025 vs. Feb 10, 2024 - Feb 24, 2024), and RCW PY (Feb 16, 2025 - Feb 22, 2025 vs. Feb 18, 2024 - Feb 24, 2024). The overall performance is concerning, indicated by a low treeMath_score of 65.5.
+  </p>
+
+  <hr>
+
+  <h2>Trend Analysis</h2>
+
+  <h3>MER (Marketing Efficiency Ratio)</h3>
+  <ul>
+    <li><strong>L2W P2W</strong>: Current value 3.44 vs. comparison value 3.21, change of 7.00%, Grade: B-. This indicates a slight improvement in marketing efficiency compared to the prior two weeks. Possible cause: Effective campaign optimizations and strategic ad placement.</li>
+    <li><strong>L2W PY</strong>: Current value 3.44 vs. comparison value 2.92, change of 18.00%, Grade: A-. Marketing efficiency has improved significantly compared to the same period last year, suggesting successful optimization efforts or a more favorable market environment.</li>
+    <li><strong>RCW PY</strong>: Current value 3.59 vs. comparison value 3.01, change of 19.00%, Grade: B. This also supports efficiency improvements year-over-year, possibly due to improved targeting or more effective campaigns.</li>
+  </ul>
+
+  <h3>CPA (Cost Per Acquisition)</h3>
+  <ul>
+    <li><strong>L2W P2W</strong>: Current value $74.51 vs. comparison value $73.23, change of 2.00%, Grade: F. Acquisition costs are slightly up compared to the previous two weeks, indicating potential inefficiencies in recent campaigns or increased competition. Possible cause: Aggressive competition in bidding on target audiences.</li>
+    <li><strong>L2W PY</strong>: Current value $74.51 vs. comparison value $61.28, change of 22.00%, Grade: F. The large increase in CPA compared to last year suggests rising acquisition costs.</li>
+    <li><strong>RCW PY</strong>: Current value $72.51 vs. comparison value $63.07, change of 15.00%, Grade: F. Similar to L2W PY, customer acquisition costs are significantly higher than the same week last year. This could be due to increased competition or less effective ad creatives.</li>
+  </ul>
+
+  <h3>ROAS (Return on Ad Spend)</h3>
+  <ul>
+    <li><strong>L2W P2W</strong>: Current value 1.43 vs. comparison value 1.43, change of 1.00%, Grade: D. ROAS is almost flat compared to the prior two weeks.</li>
+    <li><strong>L2W PY</strong>: Current value 1.43 vs. comparison value 1.52, change of -6.00%, Grade: D. Ad spend returns are lower than the same period last year, potentially due to changes in audience behavior or ad fatigue. Possible cause: Poor-performing ad creatives in key campaigns.</li>
+    <li><strong>RCW PY</strong>: Current value 1.45 vs. comparison value 1.49, change of -3.00%, Grade: D+. ROAS is slightly down compared to the same week last year.</li>
+  </ul>
+
+  <h3>CVR (Conversion Rate)</h3>
+  <ul>
+    <li><strong>L2W P2W</strong>: Current value 0.00% vs. comparison value 0.00%, change of $1.00, Grade: F. There is no change.</li>
+    <li><strong>L2W PY</strong>: Current value 0.00% vs. comparison value 0.00%, change of $1.00, Grade: F. There is no change.</li>
+    <li><strong>RCW PY</strong>: Current value 0.00% vs. comparison value 0.00%, change of $1.00, Grade: F. There is no change.</li>
+  </ul>
+
+  <h3>CPM (Cost Per Mille)</h3>
+  <ul>
+    <li><strong>L2W P2W</strong>: Current value $0.02 vs. comparison value $0.02, change of 8.00%, Grade: A-. CPM has increased slightly, suggesting higher costs for ad impressions. Possible cause: Increased usage of high-cost premium ad placements.</li>
+    <li><strong>L2W PY</strong>: Current value $0.02 vs. comparison value $0.01, change of 58.00%, Grade: A-. Costs per impression are significantly higher compared to last year. This may indicate increased competition for ad space.</li>
+    <li><strong>RCW PY</strong>: Current value $0.02 vs. comparison value $0.01, change of 66.00%, Grade: A-. Similar to the L2W PY, there's a substantial increase in CPM compared to last year.</li>
+  </ul>
+
+  <h3>CPC (Cost Per Click)</h3>
+  <ul>
+    <li><strong>L2W P2W</strong>: Current value $2.13 vs. comparison value $2.13, change of -0.00%, Grade: F. There is no change.</li>
+    <li><strong>L2W PY</strong>: Current value $2.13 vs. comparison value $1.62, change of 31.00%, Grade: F. Cost per click is significantly higher than the same period last year, potentially due to increased competition in bidding on target audiences.</li>
+    <li><strong>RCW PY</strong>: Current value $2.22 vs. comparison value $1.60, change of 39.00%, Grade: F. Like L2W PY, CPC has significantly increased compared to last year.</li>
+  </ul>
+
+  <hr>
+
+  <h2>Spend Mix Analysis</h2>
+
+  <h3>MTD PM (Feb 01, 2025 - Feb 25, 2025 vs. Jan 01, 2025 - Jan 25, 2025)</h3>
+  <ul>
+    <li>spend_mix_Facebook decreased by 3.00%</li>
+    <li>spend_mix_Non Brand Search increased by 17.00%</li>
+    <li>spend_mix_TikTok decreased by 26.00%</li>
+  </ul>
+  <p>
+    The decrease in spend_mix_Facebook coupled with an increase in spend_mix_Non Brand Search may have affected overall marketing efficiency. Decreasing spend in TikTok further may be an active detriment.
+  </p>
+
+  <h3>MTD PY (Feb 01, 2025 - Feb 25, 2025 vs. Feb 01, 2024 - Feb 25, 2024)</h3>
+  <ul>
+    <li>spend_mix_Facebook increased by 23.00%</li>
+    <li>spend_mix_Non Brand Search increased by 114.00%</li>
+    <li>spend_mix_Shopping decreased by 63.00%</li>
+    <li>spend_mix_TikTok decreased by 34.00%</li>
+  </ul>
+  <p>
+    The shift towards Facebook and Non Brand Search, and the shift away from Shopping and TikTok is a material move that is likely responsible for the swings in performance. A large increase in Facebook spend may have negatively impacted returns if not managed efficiently. Decreasing spend in TikTok further may be an active detriment.
+  </p>
+
+  <h3>WoW PY (Feb 17, 2025 - Feb 23, 2025 vs. Feb 17, 2024 - Feb 23, 2024)</h3>
+  <ul>
+    <li>spend_mix_Facebook increased by 30.00%</li>
+    <li>spend_mix_Non Brand Search increased by 52.00%</li>
+    <li>spend_mix_Shopping decreased by 62.00%</li>
+  </ul>
+  <p>
+    The shift towards Facebook and Non Brand Search, and the shift away from Shopping, is a material move that is likely responsible for the swings in performance.
+  </p>
+
+  <h3>L2W PY (Feb 10, 2025 - Feb 24, 2025 vs. Feb 10, 2024 - Feb 24, 2024)</h3>
+  <ul>
+    <li>spend_mix_Facebook increased by 29.00%</li>
+    <li>spend_mix_Non Brand Search increased by 59.00%</li>
+    <li>spend_mix_Shopping decreased by 65.00%</li>
+    <li>spend_mix_TikTok decreased by 23.00%</li>
+  </ul>
+  <p>
+    The shift towards Facebook and Non Brand Search, and the shift away from Shopping and TikTok is a material move that is likely responsible for the swings in performance.
+  </p>
+
+  <h3>RCW PY (Feb 16, 2025 - Feb 22, 2025 vs. Feb 18, 2024 - Feb 24, 2024)</h3>
+  <ul>
+    <li>spend_mix_Facebook increased by 34.00%</li>
+    <li>spend_mix_Non Brand Search increased by 60.00%</li>
+    <li>spend_mix_Shopping decreased by 62.00%</li>
+    <li>spend_mix_TikTok decreased by 14.00%</li>
+  </ul>
+  <p>
+    The shift towards Facebook and Non Brand Search, and the shift away from Shopping and TikTok is a material move that is likely responsible for the swings in performance.
+  </p>
+
+  <hr>
+
+  <h2>Key Questions</h2>
+  <ol>
+    <li>What caused the significant increase in spend_mix_Facebook and spend_mix_Non Brand Search in MTD PY, L2W PY, and RCW PY?</li>
+    <li>Why is CVR consistently at 0.00% across all periods? Is there a tracking issue?</li>
+    <li>How can CPA be reduced to improve ROAS and overall marketing efficiency?</li>
+  </ol>
+
+  <hr>
+
+  <h2>Recommendations</h2>
+  <ol>
+    <li>
+      <strong>Investigate CVR Tracking:</strong> Immediately investigate the conversion tracking setup to ensure data accuracy. The 0.00% CVR across all periods is highly unusual and likely indicates a technical issue.
+    </li>
+    <li>
+      <strong>Optimize Facebook Campaigns:</strong> With the increased spend_mix_Facebook, ensure campaigns are optimized for the target audience and creative is compelling.
+    </li>
+    <li>
+      <strong>Re-evaluate Channel Allocation:</strong> Re-evaluate spend allocation between Facebook and Non-Brand Search. Consider shifting budget back to Shopping and TikTok to leverage more efficient channels.
+    </li>
+    <li>
+      <strong>A/B Test Ad Creatives:</strong> Conduct A/B testing on ad creatives to improve engagement and conversion rates, particularly on Facebook and Non-Brand Search campaigns.
+    </li>
+  </ol>
+
+  <hr>
+
+  <h2>Conclusion</h2>
+  <p>
+    While MER has improved year-over-year, rising CPA and declining ROAS are concerning. The substantial shift in spend mix towards Facebook and Non Brand Search, coupled with a potential tracking issue with CVR, requires immediate attention. Re-evaluating channel allocation and campaign optimization are crucial steps to improve marketing efficiency and drive better returns.
+  </p>
+
+  <p><em>Marketing Report Complete. Client ID: [CLIENT_ID]</em></p>
+
+</body>
+</html>
+
+</examples>
+
+<context>
+
+  2. **Table 2: Variable Rankings**
+    - **Columns:**
+      - column_name: metric or variable (e.g., marketing_spend).
+      - description: brief explanation of the metric.
+      - calc: how to calculate the metric with field names included.
+      - rank: priority (1 is highest).
+      - weight: how much it influences the overall score and/or grade.
+      - rationale: reason for its rank/weight.
+    - **Purpose:** indicates metric importance for the analysis.
+
+[VARIABLE_RANKINGS]
+
+  3. **Table 3: Date Fields Ranking**
+    - **Columns:**
+      - rank: priority of date_field comparison.
+      - date_field: timeframe reference.
+      - weight: influence on overall grade.
+    - **Purpose:** ranks which "Date Field Definitions" (Table 1) matter most.
+
+[WEEKLY_DATE_FIELDS_RANKINGS]
+
+  4. **Table 4: Benchmarks**
+    - **Columns:**
+      - column_name: metric or variable (e.g., mer).
+      - low_end: lowest end of typical industry performance.
+      - high_end: highest end of typical industry performance.
+      - rationale: explanation for how benchmark is established.
+    - **Purpose:** shows how each partition factors into final scoring.
+
+[BENCHMARKS]
+
+  5. **Table 5: Change Variable Scoring**
+    - **Columns:**
+      - column_name: metric or variable.
+      - low_interval/high_interval: numeric thresholds for grading.
+      - grade: letter grade.
+      - rationale: explains basis for grade based on intervals.
+    - **Purpose:** determines how metrics map to letter grades.
+
+[CHANGE_VARIABLE_SCORING]
+
+  6. **Table 6: Explicit Time Periods**
+    - **Columns:**
+      - date_field: name of measurement period.
+      - start_date: start of current period.
+      - end_date: end of current period.
+      - start_date_comparison: start of comparison period.
+      - end_date_comparison: end of comparison period.
+    - **Purpose:** defines actual date ranges for current vs. comparison.
+
+[RESULTS_DATES]
+
+
+  7. **Table 7: Insights on Analyzing Anomalies**
+    - **Columns:**
+      - finding: The specific observation or anomaly detected in the data. This is a concise statement highlighting what has been identified as changing or noteworthy in the metrics.
+      - Metrics_result_change: Quantitative or qualitative details about how the metric has changed. This includes the direction of the change (increase, decrease, stable) and any relevant thresholds or benchmarks.
+      - plain_english_finding: A clear and straightforward explanation of the finding, articulated in non-technical language. This ensures that stakeholders without specialized knowledge can understand the issue.
+      - possible_causes_to_evaluate: A list of potential factors or reasons that might be contributing to the observed change. These are hypotheses that need to be investigated to identify the root cause.
+      - possible_evaluation_and_key_diagnostic_checks: Suggested methods, analyses, or checks to assess the potential causes. This includes specific diagnostic steps or metrics to examine in order to validate each possible cause.
+      - possible_prescription: Recommended actions or strategies to address the identified causes. These prescriptions aim to resolve the issue or enhance performance based on the evaluation findings.
+      - possible_agent_to_call: Identifies the roles, teams, or specific agents responsible for handling the issue. This ensures that the right personnel are engaged to investigate and implement solutions.
+      - rationale: Provides the reasoning behind selecting the specified agents. It explains why these roles are appropriate for addressing the particular finding, linking their expertise or responsibilities to the issue at hand.
+    - **Purpose:** ties changes to likely causes, checks, and solutions.
+
+[COMMON_CAUSES]
+
+
+8. **Table 8: Absolute Variable Scoring**
+
+    - **Columns:**
+      - column_name: metric or variable.
+      - low_interval/high_interval: numeric thresholds for grading.
+      - grade: letter grade.
+      - rationale: explains basis for grade based on intervals
+    - **Purpose:** determines how metrics map to letter grades.
+
+[ABSOLUTE_VARIABLE_SCORING] 
+
+  9. **Table 9:**
+    - **Columns:**
+      - rank: priority of date_field comparison for those metrics that are long-term based. 
+      - date_field: timeframe reference.
+      - weight: influence on overall grade.
+      - rationale: explanation for that weight.
+    - **Purpose:** ranks which date comparisons matter most.
+
+[LONG_TERM_WEIGHTING]
+
+  10. **Main Metrics Data**
+    - **Columns:**
+      - variable: A variable being measured.
+      - date_field: The date configuration for that variable.
+      - partition: The grouping or category (including "all" for the entire business).
+        **Note**: The partition called "all" refers to the entire company, not just a subset. It aggregates the variables across the whole business.
+      - current_value: The variable's value for the specified date range (date_field).
+      - comparison_value: The variable's value for the comparison date range.
+      - change: The percentage change between current_value and the comparison value.2
+      - math_score: A numeric measure (0-100 for regular partitions, up to 100 for the "all" partition) derived from multiplying various rankings.
+      - weight: The total weight of the combination for the general metrics grading.
+      - grade: The qualitative or letter score assigned to that variable for the specific range.
+    - In the other tables is the reference logic for how the marketing data is graded.
+    **Purpose:** presents the system data and metrics with its values and comparisons.
+
+[TREE_DATA]
+  
+  11. **treeMath_score**
+    - Score from 0 to 100 (the sum of all relevant metric math_score within the data), which intention is to measure the marketing data performance of the business.
+    - Needs to be mapped to a letter grade (e.g., A+, D, F, B, C+).
+
+[TREE_MATH_SCORE]
+
+</context>

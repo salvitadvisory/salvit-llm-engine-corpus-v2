@@ -27,12 +27,12 @@
 
     <Overview>
       - Provide a one-paragraph summary of the current subscription health, referencing the overall grade or treeMath_score (if available) and any major highlights.
-      - Indicate the primary date fields examined (e.g., "Analyzing L7D, MTD, and MoM performance…") and specify the "all" partition if applicable.
+      - Indicate the primary date fields examined (e.g., "Analyzing L7D, MTD, and MoM performance…").
     </Overview>
 
     <Trend_Analysis>
       - Compare subscription metrics over multiple time periods (e.g., L7D vs. QTD, MTD PM vs. MTD PY, MoM PM vs. MoM PY, etc.) using the full date_field references.
-      - Present the key changes in bullet points or short paragraphs:
+      - Present the key changes in bullet points or paragraphs:
          * Include the date_field name and explicit date range from Table 6 (e.g., "Nov 01, 2025 – Nov 30, 2025 vs. Oct 01, 2025 – Oct 31, 2025").
          * Highlight material shifts: for non-monetary KPIs (e.g., new_subscribers) a change of at least 10%; for monetary KPIs (e.g., order_revenue) changes that represent at least 2% of total revenue (or 20% relative change).
          * If a short-term period (e.g., L7D) and a longer-term period (e.g., QTD) show the same directional trend, consolidate the finding under the longer period and note its consistency.
@@ -87,9 +87,6 @@
     4. **Formatting & Clarity:**
        - Use HTML headings for each section and nested sub-bullets for sub-findings or recommendations.
        - Ensure all date references are explicit and in the required formats (e.g., MoM: "Abbreviated Month, Year"; MTD: "Abbreviated Month Day, Year").
-    5. **Final Verification:**
-       - If the final structure is correct and all instructions are followed, include a confirmation phrase (e.g., "Date-Cal-Data Confirmed.") where relevant.
-       - Always end with the mandatory final statement.
   </Analysis_Specifications>
 
   <!-- (5) Style & Final Output Requirements -->
